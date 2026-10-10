@@ -1,0 +1,33 @@
+title: "Rain on the glass"
+duration_min: 60
+seed: 7
+keyframe: keyframe.jpg
+
+music:
+  mood: evening
+
+piano:
+  distance: open_doorway
+  pan: -0.15
+
+ambience:
+  layers:
+    - name: rain
+      file: assets/sfx/nature/rain/rain_light-on-window_pd.mp3
+      lpf: 4200
+      smooth: 0.55
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: gentle, amplitude: 0.6}
+  effects:
+    - type: rain_glass
+      region: {rect: [0.55, 0.08, 0.98, 0.78]}
+      drops_per_mpx: 1600
+    - type: flicker
+      kind: lamp
+      center: [0.28, 0.40]
+      radius: 0.12
