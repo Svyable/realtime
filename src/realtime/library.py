@@ -86,6 +86,20 @@ def report(root=None):
             mark = 'ok  ' if ok else 'MISS'
             lines.append(f'  {mark} {bed["role"]:16} {bed["path"]}')
         lines.append(f'  {present} of {len(catalog.get("beds") or [])} beds on disk')
+        manifest_path = repo / 'materials' / 'sfx' / 'pdsounds' / 'manifest.yaml'
+        if manifest_path.is_file():
+            manifest = yaml.safe_load(manifest_path.read_text()) or {}
+            files = manifest.get('files') or []
+            counts = {}
+            for item in files:
+                counts[item['role']] = counts.get(item['role'], 0) + 1
+            summary = ', '.join(f'{role} {counts[role]}' for role in sorted(counts))
+            mb = sum(item.get('bytes') or 0 for item in files) / 1e6
+            lines.append('')
+            lines.append(f'reservoir  {len(files)} public-domain environmental recordings, {mb:.0f} MB')
+            lines.append('  materials/sfx/pdsounds')
+            lines.append(f'  {summary}')
+            lines.append('  PDSounds.org via Wikimedia Commons. Speech, music, and close-miked foley were not copied.')
     else:
         lines.append('beds    catalog not found. Clone the realtime repo and pass --root.')
     lines.append('')

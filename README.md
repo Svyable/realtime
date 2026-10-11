@@ -34,7 +34,7 @@ You also need `ffmpeg`, `fluidsynth`, and `7z` (to unpack the piano once) on you
 
 ## Materials
 
-The git repo carries a license-checked nature library (CC0 or public domain, 18 beds, credits in `materials/sfx/nature/CREDITS.md`) and six scene kits. `realtime materials` lists the kits, the carol tunes, the beds, and the engines.
+The git repo carries a license-checked nature library (CC0 or public domain, 18 beds, credits in `materials/sfx/nature/CREDITS.md`), a public-domain environmental reservoir in `materials/sfx/pdsounds/`, and six scene kits. `realtime materials` lists the kits, the carol tunes, the beds, the reservoir, and the engines.
 
 ```bash
 realtime kit yule-love
@@ -44,7 +44,9 @@ realtime build scenes/yule-love/scene.yaml --root . --test
 
 Yule Love is a Christmas parlor: hearth, one lamp, snow at the window, piano heard through an open doorway, the room 11 LU under the piano. The carols are Greensleeves (the same public-domain tune as What Child Is This), The Water Is Wide, Silent Night, and Auld Lang Syne, with original pieces titled between them. Nothing in that hour is a modern arrangement.
 
-Other kits: `hearth-rain`, `summer-porch`, `cove-window`. `parish-bells` and `night-train` need `realtime setup --sfx`, which fetches four more checked recordings (carriage wheels, train rumble, a steam whistle, distant church bells).
+Other kits: `hearth-rain`, `summer-porch`, `cove-window`, `parish-bells`. `night-train` needs `realtime setup --sfx` for the carriage-wheel recording. The PDSounds reservoir already includes rain, storms, water, birds, streets, a train ride, and church bells.
+
+The reservoir is the environmental slice of [PDSounds](https://commons.wikimedia.org/wiki/Category:PDsounds.org) on Wikimedia Commons: 592 public-domain ogg files live there, and the weather, water, nature, town, transit, and interior recordings are copied into this repo with a sha256 manifest. Speech, music, and close-miked foley were left on Commons.
 
 Pass `--root` as this clone. Kit scenes point at `materials/sfx/nature/…`, and those files are in the repository, not inside the installed wheel.
 

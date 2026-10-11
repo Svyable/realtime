@@ -1,5 +1,4 @@
-# Snow and a lullaby, with far church bells.
-# The bell file is not in git. Run `realtime setup --sfx` first.
+# Snow and a lullaby, with far church bells from the PDSounds reservoir. Offline.
 title: "Parish Bells"
 duration_min: 60
 seed: 25
@@ -29,7 +28,7 @@ ambience:
       gain_db: 0
   accents:
     - name: far bells
-      file: town/church-bells-leverkusen_pd.oga
+      file: materials/sfx/pdsounds/interior/church-bells-leverkusen-2007.oga
       lpf: 1800
       hpf: 180
       smooth: 0.45

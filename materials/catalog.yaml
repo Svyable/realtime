@@ -27,10 +27,10 @@ kits:
     music: late-night originals.
     sound: Gentle cove, low-passed, 12 LU under the piano, with a shimmer on the water.
   - id: parish-bells
-    offline: false
+    offline: true
     picture: Snowy lane, a far church with nothing readable, one candle.
     music: holiday. Carols coventry-carol, silent-night, o-come-all-ye-faithful.
-    sound: Open-field wind in git. Far bells twice an hour after `realtime setup --sfx`.
+    sound: Open-field wind plus the Leverkusen bells from the PDSounds reservoir, twice an hour, low-passed.
   - id: night-train
     offline: false
     picture: Mid-century dining car from the corridor, one lamp, no logos or faces.
@@ -123,7 +123,7 @@ fetch:
     sha256: f97d0ed990b7024faf5935438fea5e682cd47aed2e765371fb5a618776e0aff3
     url: https://upload.wikimedia.org/wikipedia/commons/a/a2/Complete_train_ride_4_minutes.ogg
     role: train rumble
-    note: Low ride rumble. In a scene, set start and end so you use roughly 0:40 to 3:10.
+    note: Low ride rumble. Also vendored at materials/sfx/pdsounds/transit/complete-train-ride-4-minutes.ogg. Use roughly 0:40 to 3:10.
   - id: train/parovoz_pd.ogg
     license: Public domain
     sha256: 838251a89da43f8994b95a1bdaa07064d38291fa96a1314e63e2a18f57991f3e
@@ -135,7 +135,7 @@ fetch:
     sha256: 40e87d6b283fa4ea42438717db94a93f8aff4187ac5968166e7189b441b70a13
     url: https://upload.wikimedia.org/wikipedia/commons/3/36/Church_bells_-_Leverkusen%2C_2007.oga
     role: distant bells
-    note: Parish and snow scenes. Low-pass, a few times an hour, well under the piano.
+    note: Also vendored at materials/sfx/pdsounds/interior/church-bells-leverkusen-2007.oga. Low-pass, a few times an hour, well under the piano.
 
 engines:
   - id: composer
@@ -156,6 +156,14 @@ engines:
   - id: visual-loop
     license: MIT
     what: One still becomes a seamless loop. Motions none, gentle, train, ship. Effects include flicker (lamp, candle, fire), rain on glass, snow, shimmer, twinkle, parallax.
+
+reservoir:
+  - id: pdsounds
+    license: Public domain
+    path: materials/sfx/pdsounds
+    manifest: materials/sfx/pdsounds/manifest.yaml
+    upstream: https://commons.wikimedia.org/wiki/Category:PDsounds.org
+    note: Environmental draw-pile from PDSounds.org, mirrored on Wikimedia Commons. Commons lists 592 public-domain ogg files. This folder is the weather, water, nature, town, transit, and interior slice. Speech, music, and close-miked foley were not copied. Audition a file before it sits under the piano.
 
 mixing:
   - Two bed layers is the usual ceiling. The piano leads. Default bed is 10 LU under the piano; the kits use 11 or 12.

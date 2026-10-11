@@ -2,7 +2,7 @@
 
 Public-domain and CC0 beds, plus the scene kits an agent copies when it makes an hour.
 
-`realtime materials` prints the index. The full map is [catalog.yaml](catalog.yaml). Recordist credits for the beds are in [sfx/nature/CREDITS.md](sfx/nature/CREDITS.md). Licenses were checked on 2026-10-07.
+`realtime materials` prints the index. The full map is [catalog.yaml](catalog.yaml). Recordist credits for the curated beds are in [sfx/nature/CREDITS.md](sfx/nature/CREDITS.md) (checked 2026-10-07). The larger draw-pile is [sfx/pdsounds/](sfx/pdsounds/CREDITS.md): public-domain environmental recordings from PDSounds.org, checked on Commons on 2026-10-11.
 
 ## Yule Love
 
@@ -16,4 +16,4 @@ realtime build scenes/yule-love/scene.yaml --root . --test
 
 `--root` is this clone, because the scene points at `materials/sfx/nature/…`.
 
-Train wheels and church bells are not in git. `realtime setup --sfx` downloads those four checked recordings into the cache. The parish-bells and night-train kits use them.
+Parish bells are in `sfx/pdsounds/interior/`. Carriage wheels for the night-train kit are still fetched with `realtime setup --sfx`. The same command also fetches a steam whistle. The train-ride recording is already in `sfx/pdsounds/transit/`.

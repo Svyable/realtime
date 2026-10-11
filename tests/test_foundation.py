@@ -172,3 +172,20 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
     assert exc.value.code == 0
     out = capsys.readouterr().out
     assert 'yule-love' in out and 'greensleeves' in out and 'fireplace' in out and 'offline' in out
+    assert 'reservoir' in out and 'pdsounds' in out
+
+
+def test_pdsounds_reservoir_matches_its_manifest():
+    import hashlib
+    import yaml
+    root = Path(__file__).resolve().parents[1]
+    manifest = yaml.safe_load((root / 'materials' / 'sfx' / 'pdsounds' / 'manifest.yaml').read_text())
+    files = manifest['files']
+    assert len(files) >= 50
+    assert manifest['license'] == 'Public domain'
+    for row in files:
+        assert row['license'] == 'Public domain'
+        path = root / row['path']
+        assert path.is_file(), row['path']
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        assert digest == row['sha256'], row['path']

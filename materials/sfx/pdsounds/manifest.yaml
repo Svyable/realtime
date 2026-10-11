@@ -1,0 +1,558 @@
+source: Wikimedia Commons Category:PDsounds.org
+upstream: https://commons.wikimedia.org/wiki/Category:PDsounds.org
+license: Public domain
+checked: '2026-10-11'
+note: Environmental slice of the PDSounds.org public-domain library. Commons lists
+  592 ogg files, all marked Public domain. This folder keeps weather, water, nature,
+  town, transit, and a few interior tones. Speech, music, and close-miked foley were
+  not copied.
+files:
+- path: materials/sfx/pdsounds/interior/boiler-gas-heater.ogg
+  role: interior
+  title: Boiler gas heater.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 700969
+  sha256: 1e1fa3b15b830c57756c1c4651641c0596f2c3265c90a670d9c770662c2762bc
+  commons: https://commons.wikimedia.org/wiki/File%3ABoiler_gas_heater.ogg
+  source: http://www.pdsounds.org/audio/download/164/gas_heater_boiler.mp3
+- path: materials/sfx/pdsounds/interior/church-bells-leverkusen-2007.oga
+  role: interior
+  title: Church bells - Leverkusen, 2007.oga
+  license: Public domain
+  artist: natalie
+  bytes: 1187871
+  sha256: 40e87d6b283fa4ea42438717db94a93f8aff4187ac5968166e7189b441b70a13
+  commons: https://commons.wikimedia.org/wiki/File%3AChurch_bells_-_Leverkusen%2C_2007.oga
+  source: http://www.pdsounds.org/audio/download/210/STE-003.mp3
+- path: materials/sfx/pdsounds/interior/churchbells.ogg
+  role: interior
+  title: Churchbells.ogg
+  license: Public domain
+  artist: Natalie
+  bytes: 2263441
+  sha256: 2c73ee12a53e4a6a9aea0d288cba5c686be5847047d87eb46ce9c27a2103e4ff
+  commons: https://commons.wikimedia.org/wiki/File%3AChurchbells.ogg
+  source: http://www.pdsounds.org/sounds/church_bells
+- path: materials/sfx/pdsounds/interior/clock-ticking.ogg
+  role: interior
+  title: Clock ticking.ogg
+  license: Public domain
+  artist: natalie
+  bytes: 504069
+  sha256: 5385f326ecfd7b5d11f18d3c14ab835f24ae9324b7cd1c12bb0fcaff1e997467
+  commons: https://commons.wikimedia.org/wiki/File%3AClock_ticking.ogg
+  source: http://www.pdsounds.org/audio/download/216/STE-025.mp3
+- path: materials/sfx/pdsounds/interior/dry-grass-burning-in-open-fireplace.ogg
+  role: interior
+  title: Dry grass burning in open fireplace.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 511116
+  sha256: 0fb9fb4a44fe378ceffb2b80d0cf420e28404e04f5f200b7bc0205eadeebc8d4
+  commons: https://commons.wikimedia.org/wiki/File%3ADry_grass_burning_in_open_fireplace.ogg
+  source: http://www.pdsounds.org/audio/download/303/dry_grass_burning_in_open_fireplace.mp3
+- path: materials/sfx/pdsounds/interior/soothing-jingling-little-bells-ambience.ogg
+  role: interior
+  title: Soothing jingling little bells ambience.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 1286728
+  sha256: d2767230855d292f5201ebfeb47e58e2248d5e417e8041eb262a7ac5e043f33b
+  commons: https://commons.wikimedia.org/wiki/File%3ASoothing_jingling_little_bells_ambience.ogg
+  source: http://www.pdsounds.org/audio/download/423/chime.mp3
+- path: materials/sfx/pdsounds/interior/sound-of-church-bells-and-birds.oga
+  role: interior
+  title: Sound of church bells and birds.oga
+  license: Public domain
+  artist: lezer
+  bytes: 1434631
+  sha256: ec90154a75e02787400148ff24f1fedaa7e6ed598c88751e9daf4d5f46b0e0b1
+  commons: https://commons.wikimedia.org/wiki/File%3ASound_of_church_bells_and_birds.oga
+  source: http://www.pdsounds.org/audio/download/584/church+bells+and+birds.mp3
+- path: materials/sfx/pdsounds/interior/windchime.ogg
+  role: interior
+  title: Windchime.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 1688259
+  sha256: 4aa26861a69604490cc3ef935c3c190c6be3374332e38671d935c34d1e482a97
+  commons: https://commons.wikimedia.org/wiki/File%3AWindchime.ogg
+  source: http://www.pdsounds.org/audio/download/381/windchime.mp3
+- path: materials/sfx/pdsounds/nature/bird-singing.ogg
+  role: nature
+  title: Bird singing.ogg
+  license: Public domain
+  artist: jc
+  bytes: 808498
+  sha256: ed1286d29b1ab6cc85e099861d1f8405dda7865df4d2ceb0cb1e946cd30900bd
+  commons: https://commons.wikimedia.org/wiki/File%3ABird_singing.ogg
+  source: http://www.pdsounds.org/audio/download/604/bird_sound.mp3
+- path: materials/sfx/pdsounds/nature/bird-sings-in-the-morning-with-cars-in-the-background.ogg
+  role: nature
+  title: Bird sings in the morning with cars in the background.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 906957
+  sha256: d394d7cfb5f8bed46bf648a09cd903850846d31eca888cb89a96a1980620d64b
+  commons: https://commons.wikimedia.org/wiki/File%3ABird_sings_in_the_morning_with_cars_in_the_background.ogg
+  source: http://www.pdsounds.org/audio/download/130/bird_sings_in_the_morning_with_cars_in_the_background.mp3
+- path: materials/sfx/pdsounds/nature/birds-singing-in-garden.ogg
+  role: nature
+  title: Birds singing in garden.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 684932
+  sha256: c3a9cbbecb313810e6ca9a0c38743a7548749a0c18fda5659f9d5dc7060bddd8
+  commons: https://commons.wikimedia.org/wiki/File%3ABirds_singing_in_garden.ogg
+  source: http://www.pdsounds.org/audio/download/128/bird_sings_in_the_afternoon.mp3
+- path: materials/sfx/pdsounds/nature/birds-songs-and-cars-passing-by.ogg
+  role: nature
+  title: Birds songs and cars passing by.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 830545
+  sha256: 403449b2ee734388f84b779590ea87ce65b27c2cf398b6c342419a139b7d02fe
+  commons: https://commons.wikimedia.org/wiki/File%3ABirds_songs_and_cars_passing_by.ogg
+  source: http://www.pdsounds.org/audio/download/115/birds_songs_and_cars_passing_by.mp3
+- path: materials/sfx/pdsounds/nature/birdsong-mild-sunny-day.ogg
+  role: nature
+  title: Birdsong mild sunny day.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 1102464
+  sha256: 287b4dc9713a024dc3535ec168a3fd87ddd25b481c881d0343fbdf4f24dd7c5d
+  commons: https://commons.wikimedia.org/wiki/File%3ABirdsong_mild_sunny_day.ogg
+  source: http://www.pdsounds.org/audio/download/104/vogel.mp3
+- path: materials/sfx/pdsounds/nature/corner-of-a-sheep-field-in-summer.ogg
+  role: nature
+  title: Corner of a sheep field in summer.ogg
+  license: Public domain
+  artist: earthcalling
+  bytes: 708836
+  sha256: d3bb6392e810df954034b4981783ba5192fcad94ae07aeef9fec6eec99aeb491
+  commons: https://commons.wikimedia.org/wiki/File%3ACorner_of_a_sheep_field_in_summer.ogg
+  source: http://www.pdsounds.org/audio/download/341/sheepfield.mp3
+- path: materials/sfx/pdsounds/nature/country-night-noise.ogg
+  role: nature
+  title: Country night noise.ogg
+  license: Public domain
+  artist: hc
+  bytes: 415104
+  sha256: 91bc76aced09a35ab8fa422c032c3e07fc4fc319e70fdf1c90c5d502c7d83716
+  commons: https://commons.wikimedia.org/wiki/File%3ACountry_night_noise.ogg
+  source: http://www.pdsounds.org/audio/download/561/Country_night_noise.mp3
+- path: materials/sfx/pdsounds/nature/forest-track-2.ogg
+  role: nature
+  title: Forest track 2.ogg
+  license: Public domain
+  artist: tball74
+  bytes: 1124813
+  sha256: a4c3f6740170f27ff73ccec389d46a8fbe5c9de35933d35e40d3fb6b7752fbf3
+  commons: https://commons.wikimedia.org/wiki/File%3AForest_track_2.ogg
+  source: http://www.pdsounds.org/audio/download/400/Forest+Track+2.mp3
+- path: materials/sfx/pdsounds/nature/forest-track-3.ogg
+  role: nature
+  title: Forest track 3.ogg
+  license: Public domain
+  artist: tball74
+  bytes: 224001
+  sha256: dc006cefc4cfcbd295368226a9fe97852e5ffc578f30f210296bccc73784d99f
+  commons: https://commons.wikimedia.org/wiki/File%3AForest_track_3.ogg
+  source: http://www.pdsounds.org/audio/download/401/Forest+Track+3.mp3
+- path: materials/sfx/pdsounds/nature/forest-track-4.ogg
+  role: nature
+  title: Forest track 4.ogg
+  license: Public domain
+  artist: tball74
+  bytes: 432100
+  sha256: 8c2df09ff015537eef8608c0b9034fc90b9c68beb5e4850bd02f515aa6864030
+  commons: https://commons.wikimedia.org/wiki/File%3AForest_track_4.ogg
+  source: http://www.pdsounds.org/audio/download/402/Forest+Track+4.mp3
+- path: materials/sfx/pdsounds/nature/forest-track.ogg
+  role: nature
+  title: Forest track.ogg
+  license: Public domain
+  artist: tball74
+  bytes: 848744
+  sha256: 904b4432887d504953ae5e4f2abb960a04d2bd5ba9f65e9b6bfc3e3b866ef71d
+  commons: https://commons.wikimedia.org/wiki/File%3AForest_track.ogg
+  source: http://www.pdsounds.org/audio/download/399/Forest+Track.mp3
+- path: materials/sfx/pdsounds/nature/gulls-above-the-street-at-dawn.ogg
+  role: nature
+  title: Gulls above the street at dawn.ogg
+  license: Public domain
+  artist: earthcalling
+  bytes: 1411452
+  sha256: 9c4213f53acbea0a3943af78bd03d364e1b749299bfdf5a80f107e49a62ca62a
+  commons: https://commons.wikimedia.org/wiki/File%3AGulls_above_the_street_at_dawn.ogg
+  source: http://www.pdsounds.org/audio/download/344/gullsfromstreet.mp3
+- path: materials/sfx/pdsounds/nature/walk-in-the-rainforest.ogg
+  role: nature
+  title: Walk in the rainforest.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 460110
+  sha256: 24dd8245130186af92393968a8df037eaa70916fcc2d28381b992aaa9cfcf3c0
+  commons: https://commons.wikimedia.org/wiki/File%3AWalk_in_the_rainforest.ogg
+  source: http://www.pdsounds.org/audio/download/703/walkinrainforest.mp3
+- path: materials/sfx/pdsounds/town/20090610-0-ambience.ogg
+  role: town
+  title: 20090610 0 ambience.ogg
+  license: Public domain
+  artist: nille
+  bytes: 3467115
+  sha256: 43848c3eda5f42829f1033112c2a91ba3e5c91b79a0532fda264c9f59856d431
+  commons: https://commons.wikimedia.org/wiki/File%3A20090610_0_ambience.ogg
+  source: http://www.pdsounds.org/audio/download/707/20090610_0.mp3
+- path: materials/sfx/pdsounds/town/cathedralofthedowns.ogg
+  role: town
+  title: Cathedralofthedowns.ogg
+  license: Public domain
+  artist: acclivity
+  bytes: 680262
+  sha256: 02acd6593c19242217ed0c471d03f07cbe928d4d49853dc43d19020b14f77ff8
+  commons: https://commons.wikimedia.org/wiki/File%3ACathedralofthedowns.ogg
+  source: http://www.pdsounds.org/audio/download/253/CathedralOfTheDowns.mp3
+- path: materials/sfx/pdsounds/town/highway-from-bridge-center.ogg
+  role: town
+  title: Highway from bridge center.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 4515932
+  sha256: ea297ed2f608b54104c1b49e073929f24a8e63ca8e3428ef62b42b1808f79695
+  commons: https://commons.wikimedia.org/wiki/File%3AHighway_from_bridge_center.ogg
+  source: http://www.pdsounds.org/audio/download/203/autobahn_bridge_center.mp3
+- path: materials/sfx/pdsounds/town/highway-from-bridge-right-side.ogg
+  role: town
+  title: Highway from bridge right side.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 2748085
+  sha256: 04de5d79b59eac4648f13801c04599f35bd95a5a686a1d82d9a2dfd4a42e97a4
+  commons: https://commons.wikimedia.org/wiki/File%3AHighway_from_bridge_right_side.ogg
+  source: http://www.pdsounds.org/audio/download/202/autobahn_bridge_rightside.mp3
+- path: materials/sfx/pdsounds/town/sunday-in-the-city-street-noise1.ogg
+  role: town
+  title: Sunday in the city street noise1.ogg
+  license: Public domain
+  artist: cori
+  bytes: 3419087
+  sha256: 50e5eb59b296580340898f16e737f826a9fd7fef6fc45b07bb3e0318a9e58495
+  commons: https://commons.wikimedia.org/wiki/File%3ASunday_in_the_city_street_noise1.ogg
+  source: http://www.pdsounds.org/audio/download/530/sunday-afternoon1.mp3
+- path: materials/sfx/pdsounds/town/sunday-in-the-city-street-noise2.ogg
+  role: town
+  title: Sunday in the city street noise2.ogg
+  license: Public domain
+  artist: cori
+  bytes: 3414104
+  sha256: 0ddb0be7eb3427f781c8268bcbc74b8ad7e1fbf75b9f6966e65274dbe85f3d9d
+  commons: https://commons.wikimedia.org/wiki/File%3ASunday_in_the_city_street_noise2.ogg
+  source: http://www.pdsounds.org/audio/download/531/sunday-afternoon2.mp3
+- path: materials/sfx/pdsounds/town/sunday-in-the-city-street-noise3.ogg
+  role: town
+  title: Sunday in the city street noise3.ogg
+  license: Public domain
+  artist: cori
+  bytes: 3916064
+  sha256: 084246f317e997061cc2714d7932173802b21f596ebaf9da8d41d076dee6750f
+  commons: https://commons.wikimedia.org/wiki/File%3ASunday_in_the_city_street_noise3.ogg
+  source: http://www.pdsounds.org/audio/download/532/sunday-afternoon3.mp3
+- path: materials/sfx/pdsounds/town/uneasy-rustling-ambience.ogg
+  role: town
+  title: Uneasy rustling ambience.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 3204665
+  sha256: 69a2851824c92062ad4cabecc996e3937433986dd31e421233293fd7e458beb6
+  commons: https://commons.wikimedia.org/wiki/File%3AUneasy_rustling_ambience.ogg
+  source: http://www.pdsounds.org/audio/download/422/babyrattle.mp3
+- path: materials/sfx/pdsounds/transit/complete-train-ride-4-minutes.ogg
+  role: transit
+  title: Complete train ride 4 minutes.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 5344528
+  sha256: f97d0ed990b7024faf5935438fea5e682cd47aed2e765371fb5a618776e0aff3
+  commons: https://commons.wikimedia.org/wiki/File%3AComplete_train_ride_4_minutes.ogg
+  source: http://www.pdsounds.org/audio/download/283/train_complete_ride_between_two_stations.mp3
+- path: materials/sfx/pdsounds/transit/droning-train-motor-on-halt.ogg
+  role: transit
+  title: Droning train motor on halt.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 120731
+  sha256: cd847dd53b0e26c307eca21b2e08b34fbdba56a079d6a84145113f9929f4039b
+  commons: https://commons.wikimedia.org/wiki/File%3ADroning_train_motor_on_halt.ogg
+  source: http://www.pdsounds.org/audio/download/287/train_motor_on_halt.mp3
+- path: materials/sfx/pdsounds/transit/trains-through-a-railwa.ogg
+  role: transit
+  title: Trains through a railwa.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 1442862
+  sha256: da1059a02472ad5635e72e50257e902ca77a77033186f60e77e1c08164fe50ef
+  commons: https://commons.wikimedia.org/wiki/File%3ATrains_through_a_railwa.ogg
+  source: http://www.pdsounds.org/audio/download/681/railwaystation.mp3
+- path: materials/sfx/pdsounds/water/boat-by-a-wharf-1.ogg
+  role: water
+  title: Boat by a wharf 1.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 406071
+  sha256: 9556aac99f2e7dad7cf42e2b5de39257337304251cdfcad09b2c52a30c05651c
+  commons: https://commons.wikimedia.org/wiki/File%3ABoat_by_a_wharf_1.ogg
+  source: http://www.pdsounds.org/audio/download/642/boatbyawharf_1.mp3
+- path: materials/sfx/pdsounds/water/boat-by-a-wharf-2.ogg
+  role: water
+  title: Boat by a wharf 2.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 1258936
+  sha256: 77218d45539bf2d254f05b0d27796b7d5dd43b02353b38929076674a193870bc
+  commons: https://commons.wikimedia.org/wiki/File%3ABoat_by_a_wharf_2.ogg
+  source: http://www.pdsounds.org/audio/download/643/boatbyawharf_2.mp3
+- path: materials/sfx/pdsounds/water/boat-by-a-wharf-3.ogg
+  role: water
+  title: Boat by a wharf 3.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 736539
+  sha256: 072cb6b6da8935a657dd839508c5c82b19b5a5ba9a5e20751231c02d6b56b9ab
+  commons: https://commons.wikimedia.org/wiki/File%3ABoat_by_a_wharf_3.ogg
+  source: http://www.pdsounds.org/audio/download/644/boatbyawharf_3.mp3
+- path: materials/sfx/pdsounds/water/boat-landing-at-a-wharf.ogg
+  role: water
+  title: Boat landing at a wharf.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 388731
+  sha256: 82c525ebbb89f6e3e31b081411f16097ea9bbdd6c5a964cd4e4de96ee694ef40
+  commons: https://commons.wikimedia.org/wiki/File%3ABoat_landing_at_a_wharf.ogg
+  source: http://www.pdsounds.org/audio/download/646/boatlandingatawharf.mp3
+- path: materials/sfx/pdsounds/water/fountain-in-toulouse.ogg
+  role: water
+  title: Fountain in toulouse.ogg
+  license: Public domain
+  artist: aldor
+  bytes: 2485096
+  sha256: 480b9da27f02b3b38e533f6a5e85e9992fc17b6139e12c5a0f999df1010b703a
+  commons: https://commons.wikimedia.org/wiki/File%3AFountain_in_toulouse.ogg
+  source: http://www.pdsounds.org/audio/download/579/2007+12+16+Fontaine+Trinite+Toulouse.mp3
+- path: materials/sfx/pdsounds/water/la-fontaine-de-la-place.ogg
+  role: water
+  title: La fontaine de la place.ogg
+  license: Public domain
+  artist: aldor
+  bytes: 3312420
+  sha256: 6e1c33fc1bd370608d17bf3a888dc4d28f19a4687a3e81ad185f759b063ec82a
+  commons: https://commons.wikimedia.org/wiki/File%3ALa_fontaine_de_la_place.ogg
+  source: http://www.pdsounds.org/audio/download/592/fontaine+place+Saint-Etienne.mp3
+- path: materials/sfx/pdsounds/water/on-a-pebble-beach.ogg
+  role: water
+  title: On a pebble beach.ogg
+  license: Public domain
+  artist: earthcalling
+  bytes: 1202713
+  sha256: 4e506141b9a285d03debdb8e0fbc9c1e30aaa29f82f8b2f368f70d5491a636b6
+  commons: https://commons.wikimedia.org/wiki/File%3AOn_a_pebble_beach.ogg
+  source: http://www.pdsounds.org/audio/download/343/pebblebeach.mp3
+- path: materials/sfx/pdsounds/water/shallow-small-river-with-stony-riverbed.ogg
+  role: water
+  title: Shallow small river with stony riverbed.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 483132
+  sha256: ee414934684667f85bba98b15c20880e0a981d93cec9582f665b005a99ba49e0
+  commons: https://commons.wikimedia.org/wiki/File%3AShallow_small_river_with_stony_riverbed.ogg
+  source: http://www.pdsounds.org/audio/download/99/river.mp3
+- path: materials/sfx/pdsounds/water/water-bubbles-chortling.ogg
+  role: water
+  title: Water bubbles chortling.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 1663558
+  sha256: 6ec962a5a4b089ca505fbf913e90e25f291d15003ef0bbe1596b49adc9efb444
+  commons: https://commons.wikimedia.org/wiki/File%3AWater_bubbles_chortling.ogg
+  source: http://www.pdsounds.org/audio/download/397/water_bubbles.mp3
+- path: materials/sfx/pdsounds/water/water-flowing-pouring-trickling.ogg
+  role: water
+  title: Water flowing pouring trickling.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 4765503
+  sha256: 39b32876bab48f0ed3626ffb88eb65c66f0b4d884332f7b5613d44ed62f7f924
+  commons: https://commons.wikimedia.org/wiki/File%3AWater_flowing_pouring_trickling.ogg
+  source: http://www.pdsounds.org/audio/download/221/water_from_basin_to_bucket.mp3
+- path: materials/sfx/pdsounds/water/water-over-rocks-as-tide-recedes.ogg
+  role: water
+  title: Water over rocks as tide recedes.ogg
+  license: Public domain
+  artist: earthcalling
+  bytes: 1232559
+  sha256: 07634cf0f0b5a8ed6e0b83222f41f84b36ca4cb482e3229abfe7a35b9e2b72b6
+  commons: https://commons.wikimedia.org/wiki/File%3AWater_over_rocks_as_tide_recedes.ogg
+  source: http://www.pdsounds.org/audio/download/340/recedingtide.mp3
+- path: materials/sfx/pdsounds/water/welling-rivulet-in-the-woods.ogg
+  role: water
+  title: Welling rivulet in the woods.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 552177
+  sha256: d296af602af87be13c68963801f375340173a4b1a803dc91724def93bc26e2eb
+  commons: https://commons.wikimedia.org/wiki/File%3AWelling_rivulet_in_the_woods.ogg
+  source: http://www.pdsounds.org/audio/download/100/rivulet.mp3
+- path: materials/sfx/pdsounds/weather/breeze-birds-and-geese.ogg
+  role: weather
+  title: Breeze birds and geese.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 805835
+  sha256: 375bca4fa0bf1040b984ea642eb157150cce5995e735a13717850763990d318b
+  commons: https://commons.wikimedia.org/wiki/File%3ABreeze_birds_and_geese.ogg
+  source: http://www.pdsounds.org/audio/download/302/breeze_birds_and_geese.mp3
+- path: materials/sfx/pdsounds/weather/gentle-breeze-and-birds-singing.ogg
+  role: weather
+  title: Gentle breeze and birds singing.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 422735
+  sha256: 399c31051dfe42f5f5af4bb2334b16aee9263ceaf594158654fa6f06d036d483
+  commons: https://commons.wikimedia.org/wiki/File%3AGentle_breeze_and_birds_singing.ogg
+  source: http://www.pdsounds.org/audio/download/129/wind_and_birds_singing.mp3
+- path: materials/sfx/pdsounds/weather/gutter.ogg
+  role: weather
+  title: Gutter.ogg
+  license: Public domain
+  artist: aldor
+  bytes: 2905623
+  sha256: 1a072b2ad75421e7bfa7259b7e828df8eba104d0d8980beafaaddc358133ed76
+  commons: https://commons.wikimedia.org/wiki/File%3AGutter.ogg
+  source: http://www.pdsounds.org/audio/download/634/Gouttiere.mp3
+- path: materials/sfx/pdsounds/weather/rain-1.ogg
+  role: weather
+  title: Rain (1).ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 585522
+  sha256: 31efcbe952a3989a9276774e2d7be61a2dc98fdd785a94d1435fc19cda9a84d1
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_%281%29.ogg
+  source: http://www.pdsounds.org/audio/download/682/rain.mp3
+- path: materials/sfx/pdsounds/weather/rain-against-the-window.ogg
+  role: weather
+  title: Rain against the window.ogg
+  license: Public domain
+  artist: cori
+  bytes: 1208332
+  sha256: 85be295e9936fbf003ae5dbc0e106b77e60854ea4b19bfb7b232420f291a737e
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_against_the_window.ogg
+  source: http://www.pdsounds.org/audio/download/600/july-rain08.mp3
+- path: materials/sfx/pdsounds/weather/rain-and-thunder-1.ogg
+  role: weather
+  title: Rain and thunder (1).ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 771989
+  sha256: 28bf32d934067dd8656062bacec2a69db49f9e15fb0e63b3ffe53c51a6b8c8eb
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_and_thunder_%281%29.ogg
+  source: http://www.pdsounds.org/audio/download/683/rainandthunder.mp3
+- path: materials/sfx/pdsounds/weather/rain-on-a-veranda-and-t.ogg
+  role: weather
+  title: Rain on a veranda and t.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 395253
+  sha256: b4e11d463d1bc4675937a3fd927f9171599bf1474e10c03afffd7e42162c9b40
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_on_a_veranda_and_t.ogg
+  source: http://www.pdsounds.org/audio/download/684/rainonverandaandthunder-1.mp3
+- path: materials/sfx/pdsounds/weather/rain-thunder-and-birds.ogg
+  role: weather
+  title: Rain thunder and birds.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 1979069
+  sha256: 23694214e45be568e912d0eeff764f28c7669a12bd6c1d0c282094e39d8be3a9
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_thunder_and_birds.ogg
+  source: http://www.pdsounds.org/audio/download/686/rainthunderandbirds.mp3
+- path: materials/sfx/pdsounds/weather/rain-thunder-and-other-noises.ogg
+  role: weather
+  title: Rain thunder and other noises.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 2485376
+  sha256: 9d4ff9341deef0cb0c4545b6db458309c98c7887422fa23e23d3e06bc1a49e94
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_thunder_and_other_noises.ogg
+  source: http://www.pdsounds.org/audio/download/520/rainthunderandothernoises.mp3
+- path: materials/sfx/pdsounds/weather/rain-thunder-steps.ogg
+  role: weather
+  title: Rain thunder steps.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 1245443
+  sha256: 8480037423bbee93f3383f97755ea822ab284e3a69efb4dded5badc02e591bf2
+  commons: https://commons.wikimedia.org/wiki/File%3ARain_thunder_steps.ogg
+  source: http://www.pdsounds.org/audio/download/519/rainthundersteps.mp3
+- path: materials/sfx/pdsounds/weather/rainthunderandbirds.ogg
+  role: weather
+  title: Rainthunderandbirds.ogg
+  license: Public domain
+  artist: Ezwa
+  bytes: 4021953
+  sha256: 01a089981c336ec056ea6d7cfde46a69a269a8724c130d2b1c0fc7b708818224
+  commons: https://commons.wikimedia.org/wiki/File%3ARainthunderandbirds.ogg
+  source: http://www.pdsounds.org/sounds/rain_thunder_and_birds
+- path: materials/sfx/pdsounds/weather/storm-thunderbolts.ogg
+  role: weather
+  title: Storm thunderbolts.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 4037346
+  sha256: 5c3b89ab57f640bca4483982b456e317c139aac8be47a5e11402afab55fabf94
+  commons: https://commons.wikimedia.org/wiki/File%3AStorm_thunderbolts.ogg
+  source: http://www.pdsounds.org/audio/download/301/storm.mp3
+- path: materials/sfx/pdsounds/weather/thunder-and-rain-on-a-v.ogg
+  role: weather
+  title: Thunder and rain on a v.ogg
+  license: Public domain
+  artist: ezwa
+  bytes: 388275
+  sha256: 73197afb71ef11e54787abc29e239c6d4e67919ad608adef552fcf0647fe19f4
+  commons: https://commons.wikimedia.org/wiki/File%3AThunder_and_rain_on_a_v.ogg
+  source: http://www.pdsounds.org/audio/download/685/rainonverandaandthunder-2.mp3
+- path: materials/sfx/pdsounds/weather/thunderstorm-after-hot-summer-day-17-minutes-01-of-04.ogg
+  role: weather
+  title: Thunderstorm after hot summer day 17 minutes 01 of 04.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 6866442
+  sha256: c188c007cdd26d2465ddae620d948123ecd787b80e48b770a01008ddfdb6591c
+  commons: https://commons.wikimedia.org/wiki/File%3AThunderstorm_after_hot_summer_day_17_minutes_01_of_04.ogg
+  source: http://www.pdsounds.org/audio/download/279/complete_summer_storm_with_30_thunder_01of04.mp3
+- path: materials/sfx/pdsounds/weather/thunderstorm-after-hot-summer-day-17-minutes-02-of-04.ogg
+  role: weather
+  title: Thunderstorm after hot summer day 17 minutes 02 of 04.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 7311310
+  sha256: 95048d5c2069324dc649b9bda89b2117706f561363bce62d8ce5d4f1efa05927
+  commons: https://commons.wikimedia.org/wiki/File%3AThunderstorm_after_hot_summer_day_17_minutes_02_of_04.ogg
+  source: http://www.pdsounds.org/audio/download/280/complete_summer_storm_with_30_thunder_02of04.mp3
+- path: materials/sfx/pdsounds/weather/thunderstorm-after-hot-summer-day-17-minutes-03-of-04.ogg
+  role: weather
+  title: Thunderstorm after hot summer day 17 minutes 03 of 04.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 7262874
+  sha256: 436c4000052b50af84c6ee5ac2c7a614ceaf6280f37da920ddc40df43c853a62
+  commons: https://commons.wikimedia.org/wiki/File%3AThunderstorm_after_hot_summer_day_17_minutes_03_of_04.ogg
+  source: http://www.pdsounds.org/audio/download/281/complete_summer_storm_with_30_thunder_03of04.mp3
+- path: materials/sfx/pdsounds/weather/thunderstorm-after-hot-summer-day-17-minutes-04-of-04.ogg
+  role: weather
+  title: Thunderstorm after hot summer day 17 minutes 04 of 04.ogg
+  license: Public domain
+  artist: stephan
+  bytes: 6856350
+  sha256: e633ce50ad243bfa5d23f7f0e5cfadd10c531990ab17159ccd21bfb8d3b9e704
+  commons: https://commons.wikimedia.org/wiki/File%3AThunderstorm_after_hot_summer_day_17_minutes_04_of_04.ogg
+  source: http://www.pdsounds.org/audio/download/282/complete_summer_storm_with_30_thunder_04of04.mp3
