@@ -1,0 +1,56 @@
+# Snow and a lullaby, with far church bells.
+# The bell file is not in git. Run `realtime setup --sfx` first.
+title: "Parish Bells"
+duration_min: 60
+seed: 25
+keyframe: keyframe.jpg
+
+music:
+  mood: holiday
+  titles:
+    - "Parish Bells"
+    - "Snow on the Lane"
+    - "After the Service"
+  carols:
+    - coventry-carol
+    - silent-night
+    - o-come-all-ye-faithful
+
+piano:
+  distance: open_doorway
+  pan: -0.1
+
+ambience:
+  layers:
+    - name: wind across the lane
+      file: materials/sfx/nature/wind/wind_open-field-gusts_cc0.mp3
+      lpf: 2800
+      smooth: 0.7
+      gain_db: 0
+  accents:
+    - name: far bells
+      file: town/church-bells-leverkusen_pd.oga
+      lpf: 1800
+      hpf: 180
+      smooth: 0.45
+      per_hour: 2
+      clip_s: 16
+      extra_lu_below: 6
+      in_test: false
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: gentle, amplitude: 0.35}
+  effects:
+    - type: particles
+      kind: snow
+      count: 500
+      opacity: 0.45
+    - type: flicker
+      kind: candle
+      center: [0.48, 0.58]
+      radius: 0.08
+
+thumbnail: {text: "Parish Bells", position: top-right}

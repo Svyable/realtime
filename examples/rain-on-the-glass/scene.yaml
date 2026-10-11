@@ -13,7 +13,7 @@ piano:
 ambience:
   layers:
     - name: rain
-      file: assets/sfx/nature/rain/rain_light-on-window_pd.mp3
+      file: materials/sfx/nature/rain/rain_light-on-window_pd.mp3
       lpf: 4200
       smooth: 0.55
       gain_db: 0

@@ -1,6 +1,6 @@
 [project]
 name = "realtime"
-version = "0.1.0"
+version = "0.2.0"
 description = "One still and one scene file become a seamless hour of piano and room tone."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -32,7 +32,7 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.setuptools.package-data]
-realtime = ["music/data/*.json", "templates/*", "py.typed"]
+realtime = ["music/data/*.json", "templates/*", "kits/*", "py.typed"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

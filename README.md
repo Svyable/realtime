@@ -32,6 +32,22 @@ You also need `ffmpeg`, `fluidsynth`, and `7z` (to unpack the piano once) on you
 
 `realtime catalog` prints every mood, distance, motion, and effect. `realtime inspect scene.yaml` prints the set list that seed will compose.
 
+## Materials
+
+The git repo carries a license-checked nature library (CC0 or public domain, 18 beds, credits in `materials/sfx/nature/CREDITS.md`) and six scene kits. `realtime materials` lists the kits, the carol tunes, the beds, and the engines.
+
+```bash
+realtime kit yule-love
+# drop keyframe.jpg into scenes/yule-love/ using the prompt.md written beside it
+realtime build scenes/yule-love/scene.yaml --root . --test
+```
+
+Yule Love is a Christmas parlor: hearth, one lamp, snow at the window, piano heard through an open doorway, the room 11 LU under the piano. The carols are Greensleeves (the same public-domain tune as What Child Is This), The Water Is Wide, Silent Night, and Auld Lang Syne, with original pieces titled between them. Nothing in that hour is a modern arrangement.
+
+Other kits: `hearth-rain`, `summer-porch`, `cove-window`. `parish-bells` and `night-train` need `realtime setup --sfx`, which fetches four more checked recordings (carriage wheels, train rumble, a steam whistle, distant church bells).
+
+Pass `--root` as this clone. Kit scenes point at `materials/sfx/nature/…`, and those files are in the repository, not inside the installed wheel.
+
 Every motion period is snapped so it divides the loop. Frame 0 and the last frame are the same picture, so repeating the loop for an hour has no seam.
 
 ## Stages
@@ -68,7 +84,7 @@ my_glow = "my_package.effects:install"
 
 `install` calls `register_effect("glow", prep_glow)`. `realtime build` loads those entry points before it renders.
 
-Sound files are not bundled. A layer's `file` is looked up in the scene directory, the project you pass with `--root`, then `$REALTIME_ASSETS` and `~/.cache/realtime` (and an existing Vintage Era Radio cache, if you have one). Use CC0 or public-domain recordings if the video will be published.
+A layer's `file` is looked up in the scene directory, the project you pass with `--root`, then `$REALTIME_ASSETS` and `~/.cache/realtime` (and an existing Vintage Era Radio cache, if you have one). Use CC0 or public-domain recordings if the video will be published. The nature beds in this repo already are. Do not add CC-BY, ShareAlike, NonCommercial, BBC RemArc, or a modern chart of a public-domain tune. The refused list is in `materials/catalog.yaml`.
 
 ## What `realtime setup` downloads
 
@@ -78,7 +94,7 @@ Sound files are not bundled. A layer's `file` is looked up in the scene director
 | EDSR ×2 super-resolution weights | Apache-2.0 (a tool; nothing from it is in the picture except sharper pixels) |
 | Limelight, DM Serif Display, Poiret One | SIL OFL 1.1 |
 
-The composer writes new chord progressions, motifs, and voicings. It does not quote existing songs. Public-domain carol *tunes* (Silent Night, and the others in `realtime.music.carols`) can be named in `music.carols` and are re-harmonised by the same engine. Those tunes are public domain. A modern arrangement of them is not, and this package does not include any.
+The composer writes new chord progressions, motifs, and voicings. It does not quote existing songs. Public-domain carol tunes in `realtime.music.carols` can be named in `music.carols` and are re-harmonised by the same engine. Those tunes are public domain. A modern arrangement of them is not, and this package does not include any.
 
 ## Layout
 
@@ -88,9 +104,11 @@ src/realtime/
   scene.py       scene.yaml defaults, extends, validation
   graph.py       stage order and cache keys
   runner.py      build, with audio and picture in parallel
+  kits/          ready scenes, including yule-love
   music/         set list, composer, carols, progression templates
   audio/         room chain, beds, mix, master
   visual/        the loop
+materials/       CC0 and public-domain beds, and the agent index
 ```
 
 ## Tests

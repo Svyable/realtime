@@ -1,0 +1,3 @@
+# Curated CC0 and public-domain beds. These mp3s belong in git.
+# Renders (mp4, wav) stay out via the repository .gitignore.
+!*.mp3

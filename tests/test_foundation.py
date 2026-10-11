@@ -113,3 +113,62 @@ def test_cli_catalog_and_new(tmp_path, capsys):
     scene = Path(tmp_path / 'porch' / 'scene.yaml')
     assert scene.exists()
     load(scene)
+
+
+def _bar_beats(melody):
+    return sum(float(tok.split(':')[1]) for tok in melody.split())
+
+
+def test_every_carol_bar_fills_the_meter_and_arranges():
+    from realtime.music.carols import TUNES, Carol, parse_melody
+    from realtime.music.compose import TONES
+    for cid, tune in TUNES.items():
+        bpb = tune['beats_per_bar']
+        for i, (mel, chords) in enumerate(tune['bars']):
+            got = _bar_beats(mel)
+            assert abs(got - bpb) < 1e-6, f'{cid} bar {i} sums to {got}, meter is {bpb}'
+            parse_melody(mel)
+            for chord in (chords if isinstance(chords, list) else [chords]):
+                degree, quality = chord.split(':')
+                int(degree)
+                assert quality in TONES, (cid, chord)
+        piece = Carol(dict(carol=cid, key='C', beats_per_bar=bpb, mel_vel=60, block=True), 1)
+        piece.build()
+        assert piece.events and piece.total_beats > bpb
+
+
+def test_kits_catalog_and_materials(tmp_path, capsys):
+    import yaml
+    from realtime.cli import main
+    from realtime.fetch import SFX_ASSETS
+    from realtime.music.carols import TUNES
+    root = Path(__file__).resolve().parents[1]
+    catalog = yaml.safe_load((root / 'materials' / 'catalog.yaml').read_text())
+    assert len(catalog['beds']) >= 18
+    for bed in catalog['beds']:
+        assert (root / bed['path']).is_file(), bed['path']
+    by_id = {row['id']: row for row in catalog['fetch']}
+    for rel, url, digest in SFX_ASSETS:
+        fid = rel.split('/', 1)[1]
+        assert by_id[fid]['sha256'] == digest
+        assert by_id[fid]['url'] == url
+    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train'):
+        parent = tmp_path / name
+        parent.mkdir()
+        with pytest.raises(SystemExit) as exc:
+            main(['kit', name, '--dir', str(parent)])
+        assert exc.value.code == 0
+        cfg = load(parent / name / 'scene.yaml')
+        for cid in cfg['music']['carols']:
+            assert cid in TUNES
+        assert (parent / name / 'prompt.md').is_file()
+    yule = load(tmp_path / 'yule-love' / 'yule-love' / 'scene.yaml')
+    assert yule['title'] == 'Yule Love'
+    assert yule['piano']['distance'] == 'open_doorway'
+    assert yule['mix']['bed_lu_below_piano'] == 11
+    assert yule['music']['carols'] == ['greensleeves', 'the-water-is-wide', 'silent-night', 'auld-lang-syne']
+    with pytest.raises(SystemExit) as exc:
+        main(['materials', '--root', str(root)])
+    assert exc.value.code == 0
+    out = capsys.readouterr().out
+    assert 'yule-love' in out and 'greensleeves' in out and 'fireplace' in out and 'offline' in out

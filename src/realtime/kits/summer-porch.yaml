@@ -1,0 +1,41 @@
+# Summer night on a porch. One cricket bed. Offline.
+title: "The Porch at Dusk"
+duration_min: 60
+seed: 8
+keyframe: keyframe.jpg
+
+music:
+  mood: evening
+  titles:
+    - "Porch Light"
+    - "Two Chairs"
+    - "The Lane After Dark"
+
+piano:
+  distance: open_doorway
+  pan: 0.08
+
+ambience:
+  layers:
+    - name: crickets and far surf
+      file: materials/sfx/nature/crickets-night/crickets_night-chorus-distant-surf_pd.mp3
+      lpf: 6500
+      smooth: 0.5
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: gentle, amplitude: 0.35}
+  effects:
+    - type: flicker
+      kind: lamp
+      center: [0.62, 0.36]
+      radius: 0.12
+    - type: particles
+      kind: dust
+      count: 90
+      opacity: 0.35
+
+thumbnail: {text: "The Porch at Dusk", position: top-right}

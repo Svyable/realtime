@@ -1,0 +1,57 @@
+# Public-domain Christmas love hour. Offline: the beds are in this repo.
+# Picture: 16:9 parlor, no people, no text. Hearth on the left, lamp on the right, snow in the window.
+# Build from a clone: realtime build scenes/yule-love/scene.yaml --root <clone> --test
+title: "Yule Love"
+duration_min: 60
+seed: 1225
+keyframe: keyframe.jpg
+
+music:
+  mood: holiday
+  titles:
+    - "Yule Love"
+    - "The Lamp Between Us"
+    - "Snow on the Sill"
+  carols:
+    - greensleeves
+    - the-water-is-wide
+    - silent-night
+    - auld-lang-syne
+
+piano:
+  distance: open_doorway
+  pan: -0.12
+
+ambience:
+  layers:
+    - name: hearth
+      file: materials/sfx/nature/fire/fireplace_crackling-wood-fire_pd.mp3
+      lpf: 6000
+      smooth: 0.35
+      gain_db: 0
+    - name: wind at the sash
+      file: materials/sfx/nature/wind/wind_open-field-gusts_cc0.mp3
+      lpf: 2500
+      smooth: 0.7
+      gain_db: -6
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: gentle, amplitude: 0.4}
+  effects:
+    - type: flicker
+      kind: fire
+      center: [0.32, 0.62]
+      radius: 0.16
+    - type: flicker
+      kind: lamp
+      center: [0.72, 0.38]
+      radius: 0.10
+    - type: particles
+      kind: snow
+      count: 700
+      opacity: 0.55
+
+thumbnail: {text: "Yule Love", position: top-right}

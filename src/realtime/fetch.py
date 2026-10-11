@@ -47,10 +47,31 @@ def cache_dir():
     return Path.home() / '.cache' / 'realtime'
 
 
-def setup(log=print):
+# Optional room tone. Checked hashes, CC0 or public domain. Not required for the offline kits.
+# Scene files name these as train/wheels_ru_cc0.ogg (the cache's sfx/ directory is on the search path).
+SFX_ASSETS = [
+    ('sfx/train/wheels_ru_cc0.ogg',
+     'https://upload.wikimedia.org/wikipedia/commons/3/36/%D0%A1%D1%82%D1%83%D0%BA_%D0%BA%D0%BE%D0%BB%D1%91%D1%81_%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%D0%B0.ogg',
+     '3319448a22e30ee1ca36a4c5ef98e14e062077b1c985ce166e80ebf6a0df30b5'),
+    ('sfx/train/trainride_pd.ogg',
+     'https://upload.wikimedia.org/wikipedia/commons/a/a2/Complete_train_ride_4_minutes.ogg',
+     'f97d0ed990b7024faf5935438fea5e682cd47aed2e765371fb5a618776e0aff3'),
+    ('sfx/train/parovoz_pd.ogg',
+     'https://upload.wikimedia.org/wikipedia/commons/c/c6/Parovoz_sound.ogg',
+     '838251a89da43f8994b95a1bdaa07064d38291fa96a1314e63e2a18f57991f3e'),
+    ('sfx/town/church-bells-leverkusen_pd.oga',
+     'https://upload.wikimedia.org/wikipedia/commons/3/36/Church_bells_-_Leverkusen%2C_2007.oga',
+     '40e87d6b283fa4ea42438717db94a93f8aff4187ac5968166e7189b441b70a13'),
+]
+
+
+def setup(log=print, sfx=False):
     dest_root = cache_dir()
     dest_root.mkdir(parents=True, exist_ok=True)
-    for rel, url, digest, unpack in ENGINE_ASSETS:
+    assets = list(ENGINE_ASSETS)
+    if sfx:
+        assets += [(rel, url, digest, None) for rel, url, digest in SFX_ASSETS]
+    for rel, url, digest, unpack in assets:
         dest = dest_root / rel
         if dest.exists() and _sha256(dest) == digest:
             log(f'ok   {dest}')
@@ -96,4 +117,11 @@ def doctor():
     rows.append((bool(sf2), 'piano soundfont', str(sf2[0]) if sf2 else 'missing, run `realtime setup`'))
     rows.append((bool(edsr), 'EDSR x2 model', str(edsr) if edsr else 'missing, run `realtime setup` (Lanczos is used without it)'))
     rows.append((len(fonts) >= 1, 'thumbnail fonts', f'{len(fonts)} found' if fonts else 'missing, run `realtime setup`'))
+    sfx_n = 0
+    for cache in caches:
+        folder = cache / 'sfx'
+        if folder.exists():
+            sfx_n += sum(1 for p in folder.rglob('*') if p.is_file() and p.suffix in {'.ogg', '.oga', '.mp3', '.wav', '.flac'})
+    detail = f'{sfx_n} cached' if sfx_n else 'none yet; `realtime setup --sfx` fetches train and bells'
+    rows.append((True, 'optional sfx', detail))
     return rows

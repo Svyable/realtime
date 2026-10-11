@@ -59,6 +59,74 @@ TUNES = {
     ('R:2 D4:1', '7:7'),
     ('G4:1 G4:.5 A4:.5 G4:.5 F#4:.5', '0:69'), ('E4:1 C4:1 E4:1', '5:maj7'), ('A4:1 A4:.5 B4:.5 A4:.5 G4:.5', '2:7'), ('F#4:1 D4:1 D4:1', '7:7'),
     ('B4:1 B4:.5 C5:.5 B4:.5 A4:.5', '4:7b9'), ('G4:1 E4:1 D4:.5 D4:.5', '9:m7'), ('E4:1 A4:1 F#4:1', ['9:m7', '2:7']), ('G4:2 R:1', '0:69')]),
+ 'god-rest-ye-merry': dict(
+    title='God Rest Ye Merry, Gentlemen', basis='Traditional English carol, as printed by William Sandys (1833); public domain. Not a modern choral arrangement',
+    written_key='E', beats_per_bar=4, bars=[
+    ('E4:1 E4:1 B4:2', '0:m7'), ('G4:1 A4:1 B4:1 B4:1', '0:m6'),
+    ('A4:1 G4:1 A4:1 B4:1', '5:m7'), ('E4:4', '0:m7'),
+    ('E4:1 E4:1 B4:2', '0:m7'), ('G4:1 A4:1 B4:1 B4:1', '3:maj7'),
+    ('A4:1 G4:1 A4:1 D5:1', '7:7'), ('E4:4', '0:m6'),
+    ('B4:1 B4:1 E5:2', '7:7'), ('D5:1 C5:1 B4:1 A4:1', '8:maj7'),
+    ('B4:1 A4:1 G4:1 A4:1', '5:m7'), ('B4:4', '0:m7'),
+    ('E5:1 D5:1 C5:1 B4:1', '8:maj7'), ('A4:1 G4:1 A4:1 B4:1', '5:m7'),
+    ('A4:1 G4:1 A4:1 D5:1', '7:7'), ('E4:4', '0:m6')]),
+ 'joy-to-the-world': dict(
+    title='Joy to the World', basis='Lowell Mason, Antioch (1839), drawing on Handel; the familiar tune is public domain. Not a modern choral arrangement',
+    written_key='C', beats_per_bar=4, bars=[
+    ('C5:1 B4:1 A4:1 G4:1', '0:maj7'), ('F4:1 E4:1 D4:1 C4:1', '5:maj7'),
+    ('R:1 G4:1 A4:1 A4:1', '0:69'), ('B4:1 B4:1 B4:2', '7:7'),
+    ('B4:1 C5:1 B4:1 A4:1', '0:maj7'), ('A4:1 G4:2 R:1', '0:69'),
+    ('G4:1 G4:1 G4:2', '7:7'), ('G4:1 A4:1 G4:1 F4:1', '5:maj7'),
+    ('E4:1 E4:1 E4:2', '0:maj7'), ('E4:1 F4:1 E4:1 D4:1', '7:7'),
+    ('C4:1 C4:1 C4:2', '0:69'), ('C5:1 B4:1 A4:1 G4:1', '0:maj7'),
+    ('F4:1 E4:1 D4:1 C4:1', '5:maj7'), ('G4:1 A4:1 G4:1 F4:1', '7:7'),
+    ('E4:1 F4:1 E4:1 D4:1', '7:7'), ('C4:4', '0:69')]),
+ 'o-come-all-ye-faithful': dict(
+    title='O Come, All Ye Faithful', basis='John Francis Wade, Adeste Fideles (c. 1743); public domain. Not a modern choral arrangement',
+    written_key='G', beats_per_bar=4, bars=[
+    ('G4:1.5 G4:.5 D4:1 G4:.5 A4:.5', '0:69'), ('B4:1 A4:.5 G4:.5 A4:1 D4:1', '7:7'),
+    ('B4:1 A4:.5 G4:.5 A4:1 D4:1', '7:7'), ('G4:2 D4:1.5 G4:.5', '0:maj7'),
+    ('D5:1.5 D5:.5 C5:1 B4:.5 A4:.5', '0:maj7'), ('B4:1 A4:.5 G4:.5 A4:1 D5:1', '7:7'),
+    ('B4:1 A4:.5 G4:.5 C5:1 B4:1', '4:m7'), ('A4:1 G4:3', '0:69'),
+    ('D4:1 D4:1 B4:1 A4:1', '7:7'), ('G4:1 D4:1 G4:1 A4:1', '0:maj7'),
+    ('B4:1 A4:1 G4:2', '7:7'), ('G4:4', '0:69')]),
+ 'greensleeves': dict(
+    title='Greensleeves', basis='English broadside melody, registered 1580. The same public-domain tune is sung as What Child Is This. Not a modern arrangement of either',
+    written_key='A', beats_per_bar=3, bars=[
+    ('C5:2 D5:1', '0:m7'), ('E5:2 C5:1', '0:m6'), ('E5:2 F5:1', '3:maj7'), ('G5:3', '3:maj7'),
+    ('E5:2 F5:1', '0:m7'), ('G5:2 E5:1', '7:m7'), ('D5:3', '10:maj7'), ('D5:2 B4:1', '7:7'),
+    ('C5:2 D5:1', '0:m7'), ('E5:2 C5:1', '0:m6'), ('E5:2 F5:1', '3:maj7'), ('G5:2 E5:1', '3:maj7'),
+    ('C5:1 C5:1 B4:1', '7:7'), ('A4:2 G4:1', '10:maj7'), ('A4:3', '0:m6'), ('A4:3', '0:m7'),
+    ('G4:2 G4:1', '10:maj7'), ('G4:2 E5:1', '10:maj7'), ('D5:2 C5:1', '0:m7'), ('B4:3', '7:7'),
+    ('G4:2 G4:1', '10:maj7'), ('G4:2 E5:1', '10:maj7'), ('D5:2 C5:1', '5:m7'), ('B4:3', '7:7'),
+    ('C5:2 D5:1', '0:m7'), ('E5:2 C5:1', '0:m6'), ('E5:2 F5:1', '3:maj7'), ('G5:2 E5:1', '3:maj7'),
+    ('C5:1 C5:1 B4:1', '7:7'), ('A4:2 G4:1', '10:maj7'), ('A4:3', '0:m6'), ('A4:3', '0:m7')]),
+ 'auld-lang-syne': dict(
+    title='Auld Lang Syne', basis='Traditional Scottish melody associated with Robert Burns (late 18th century); public domain. Not a modern band arrangement',
+    written_key='F', beats_per_bar=4, bars=[
+    ('C5:.5 F4:1 F4:.5 F4:1 A4:1', '0:maj7'), ('C5:1 D5:1 C5:1 A4:1', '0:69'),
+    ('Bb4:1 A4:1 G4:1 F4:1', '5:maj7'), ('G4:1 F4:3', '0:69'),
+    ('C5:.5 F4:1 F4:.5 F4:1 A4:1', '0:maj7'), ('C5:1 F5:1 D5:1 C5:1', '7:7'),
+    ('Bb4:1 A4:1 G4:1 C5:1', '5:maj7'), ('A4:1 G4:1 F4:2', '0:69'),
+    ('F5:1 F5:1 A5:2', '0:maj7'), ('G5:1 F5:1 D5:1 C5:1', '2:m7'),
+    ('Bb4:1 A4:1 G4:1 F4:1', '7:7'), ('F4:4', '0:69')]),
+ 'the-water-is-wide': dict(
+    title='The Water Is Wide', basis='Traditional British folk melody, O Waly Waly (printed from the 17th century); public domain love song. Not a modern arrangement',
+    written_key='C', beats_per_bar=4, bars=[
+    ('C4:1 E4:1 G4:1 A4:1', '0:maj7'), ('G4:1 E4:1 D4:1 C4:1', '5:maj7'),
+    ('E4:1 G4:1 C5:1 C5:1', '0:69'), ('A4:1 G4:1 E4:1 D4:1', '2:m7'),
+    ('C4:1 E4:1 G4:1 A4:1', '0:maj7'), ('G4:1 E4:1 C4:2', '0:69'),
+    ('E4:1 G4:1 C5:1 D5:1', '0:maj7'), ('E5:1 D5:1 C5:1 A4:1', '4:m7'),
+    ('G4:1 E4:1 G4:1 A4:1', '0:69'), ('G4:1 E4:1 D4:1 C4:1', '7:7'),
+    ('E4:1 G4:1 C5:1 A4:1', '0:maj7'), ('G4:1 E4:1 D4:1 C4:1', '7:7'),
+    ('C4:4', '0:69')]),
+ 'coventry-carol': dict(
+    title='Coventry Carol', basis='Lully lullay, from the Shearmen and Tailors pageant (manuscript 1591); public domain. Not a modern choral arrangement',
+    written_key='E', beats_per_bar=3, bars=[
+    ('B4:1 B4:1 B4:1', '0:m7'), ('G4:1 A4:1 B4:1', '0:m6'), ('C5:1 B4:1 A4:1', '8:maj7'), ('B4:3', '0:m7'),
+    ('B4:1 B4:1 B4:1', '0:m7'), ('G4:1 A4:1 B4:1', '3:maj7'), ('A4:1 G4:1 F#4:1', '7:7'), ('E4:3', '0:m6'),
+    ('E5:1 D5:1 C5:1', '8:maj7'), ('B4:1 C5:1 D5:1', '7:7'), ('E5:1 B4:1 G4:1', '0:m7'), ('A4:1 G4:1 F#4:1', '7:7'),
+    ('G4:1 A4:1 B4:1', '0:m6'), ('C5:1 B4:1 A4:1', '8:maj7'), ('G4:1 F#4:1 E4:1', '7:7'), ('E4:3', '0:m7')]),
 }
 
 def parse_melody(s):

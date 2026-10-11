@@ -1,0 +1,45 @@
+# Fireplace with rain on the window. Offline.
+title: "Hearth and Rain"
+duration_min: 60
+seed: 19
+keyframe: keyframe.jpg
+
+music:
+  mood: evening
+  titles:
+    - "Rain on the Mantel"
+    - "The Other Room"
+    - "Last Log"
+
+piano:
+  distance: open_doorway
+  pan: -0.18
+
+ambience:
+  layers:
+    - name: rain through the window
+      file: materials/sfx/nature/rain/rain_morning-through-open-window_pd.mp3
+      lpf: 7000
+      smooth: 0.45
+      gain_db: 0
+    - name: hearth
+      file: materials/sfx/nature/fire/fireplace_crackling-wood-fire_pd.mp3
+      lpf: 5000
+      smooth: 0.3
+      gain_db: -2
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: gentle, amplitude: 0.45}
+  effects:
+    - type: rain_glass
+      region: {rect: [0.52, 0.06, 0.98, 0.72]}
+      drops_per_mpx: 1400
+    - type: flicker
+      kind: fire
+      center: [0.28, 0.66]
+      radius: 0.16
+
+thumbnail: {text: "Hearth and Rain", position: top-right}

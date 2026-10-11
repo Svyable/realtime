@@ -1,0 +1,38 @@
+# Wheels under a closed door. The recording is fetched, not vendored.
+# Run `realtime setup --sfx` first. Keep the bed well under the piano.
+title: "Night Train"
+duration_min: 60
+seed: 3
+keyframe: keyframe.jpg
+
+music:
+  mood: late_night
+  titles:
+    - "The Dining Car"
+    - "Miles of Dark"
+    - "Last Call"
+
+piano:
+  distance: closed_door
+  pan: -0.25
+
+ambience:
+  layers:
+    - name: wheels
+      file: train/wheels_ru_cc0.ogg
+      lpf: 900
+      smooth: 0.85
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 11
+
+visual:
+  motion: {type: train, amplitude: 0.7, bump_period_s: 1.2}
+  effects:
+    - type: flicker
+      kind: lamp
+      center: [0.55, 0.40]
+      radius: 0.1
+
+thumbnail: {text: "Night Train", position: top-right}

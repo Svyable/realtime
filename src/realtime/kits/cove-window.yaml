@@ -1,0 +1,40 @@
+# Late night, a calm cove beyond the glass. Offline.
+title: "Cove Window"
+duration_min: 60
+seed: 44
+keyframe: keyframe.jpg
+
+music:
+  mood: late_night
+  titles:
+    - "Window on the Cove"
+    - "Tide Glass"
+    - "The Lamp Stays"
+
+piano:
+  distance: open_doorway
+  pan: -0.2
+
+ambience:
+  layers:
+    - name: cove
+      file: materials/sfx/nature/ocean/ocean_gentle-waves-cove_pd.mp3
+      lpf: 4000
+      smooth: 0.65
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 12
+
+visual:
+  motion: {type: gentle, amplitude: 0.3}
+  effects:
+    - type: shimmer
+      region: {rect: [0.08, 0.42, 0.92, 0.78]}
+      amount_px: 1.2
+    - type: flicker
+      kind: lamp
+      center: [0.78, 0.34]
+      radius: 0.08
+
+thumbnail: {text: "Cove Window", position: top-right}

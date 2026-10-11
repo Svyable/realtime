@@ -3,6 +3,7 @@ import argparse, os, sys
 
 from realtime.catalog import DISTANCE, MOODS, known_effects, known_motions
 from realtime.fetch import doctor, setup
+from realtime.library import kit_names, report, write_kit
 from realtime.scene import SceneError, load, write_template
 from realtime.version import __version__
 
@@ -128,8 +129,21 @@ def _doctor(args):
 
 
 def _setup(args):
-    setup()
+    setup(sfx=args.sfx)
     _doctor(argparse.Namespace(quiet=True))
+
+
+def _materials(args):
+    print(report(args.root), end='')
+
+
+def _kit(args):
+    parent = args.dir or os.path.join(os.getcwd(), 'scenes')
+    try:
+        dest = write_kit(args.name, parent)
+    except FileExistsError:
+        sys.exit(f'{os.path.join(parent, args.name)} already exists')
+    print(dest)
 
 
 def main(argv=None):
@@ -177,7 +191,17 @@ def main(argv=None):
     d.set_defaults(func=_doctor)
 
     u = sub.add_parser('setup', help='download the piano soundfont, EDSR weights, and thumbnail fonts')
+    u.add_argument('--sfx', action='store_true', help='also download the public-domain train and bell recordings')
     u.set_defaults(func=_setup)
+
+    m = sub.add_parser('materials', help='list kits, carols, beds, and engines')
+    m.add_argument('--root', help='clone that holds materials/ (default: the current directory, then this repo)')
+    m.set_defaults(func=_materials)
+
+    k = sub.add_parser('kit', help='write a ready scene (yule-love, hearth-rain, summer-porch, cove-window, …)')
+    k.add_argument('name', choices=kit_names())
+    k.add_argument('--dir', help='parent directory (default ./scenes)')
+    k.set_defaults(func=_kit)
 
     args = p.parse_args(argv)
     try:
