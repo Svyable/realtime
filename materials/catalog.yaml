@@ -46,6 +46,11 @@ kits:
     picture: Dark room, one lamp, a black lake beyond the window. No snow, no people, no text.
     music: late-night originals. Across the Water, One Wail, The Far Shore.
     sound: One layer, twelve minutes of loons on Bray Lake, Ontario, the evening of 29 April 2026, 7 LU under the piano. A Yellowstone common-loon tremolo four times an hour. No cricket layer. Ontario and Yellowstone, the same species as a New Hampshire lake.
+  - id: window-rain
+    offline: true
+    picture: Dark room at night, one lamp, rain on a wide window. No people, no text, no album covers.
+    music: late-night originals. Rain on the Glass, The Record and the Weather, After the Street Goes Quiet.
+    sound: One layer, sixteen minutes of rain in a Barcelona window, 10 LU under the piano. Swap the file for the Serrinha night rain or the Fairbanks summer rain when the picture is outdoors.
 
 beds:
   - path: materials/sfx/nature/fire/fireplace_crackling-wood-fire_pd.mp3
@@ -182,6 +187,14 @@ wildlife:
     credits: materials/sfx/wildlife/CREDITS.md
     checked: "2026-10-12"
     note: Spring peepers, wood frogs, leopard frogs, a twenty-minute Ontario night with tree frogs and loons, common loons from Bray Lake, the Boundary Waters, Yellowstone, and the U.S. Fish and Wildlife Service, and a Salt Lake field cricket. Public Domain Mark, plus U.S. government works and one PDSounds call. None of the peeper or loon files were recorded in New Hampshire. Peepers (April) and crickets (summer) do not sing in the same month. Katydids, American toads, whip-poor-wills, and barred owls stayed out because the clean files found were CC-BY or CC-BY-SA.
+
+loops:
+  - id: long-rain
+    path: materials/sfx/loops
+    manifest: materials/sfx/loops/manifest.yaml
+    credits: materials/sfx/loops/CREDITS.md
+    checked: "2026-10-13"
+    note: Three public-domain rains long enough to sit under an hour of music. A twenty-minute midnight rain in Serrinha do Alambari, sixteen minutes of rain in a Barcelona window, and thirty-two even minutes of late-summer rain in Fairbanks. The shorter nature beds stay in materials/sfx/nature.
 
 mixing:
   - Two bed layers is the usual ceiling. The piano leads. Default bed is 10 LU under the piano. Most kits use 11 or 12. The peeper kit uses 7 so the chorus is close enough to sleep to, and the piano still leads.

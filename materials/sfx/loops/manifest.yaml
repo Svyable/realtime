@@ -1,0 +1,45 @@
+source: Long public-domain rains chosen to sit under an hour of music
+checked: '2026-10-13'
+note: The curated nature beds are a minute or two. These three are the steady
+  takes, long enough that an hour does not keep returning to the same moment.
+  Public Domain Mark on radio aporee. Fairbanks is the even first 32 minutes of
+  a 45-minute recording. The rain thickens after that.
+files:
+- path: materials/sfx/loops/serrinha-night-rain_pd.mp3
+  role: night rain
+  license: Public Domain Mark 1.0
+  artist: Felix Blume
+  place: Serrinha do Alambari, Rio de Janeiro, Brazil
+  note: Midnight rain from a balcony, 31 August 2021. Schoeps ORTF, about twenty
+    minutes. The steadiest of the three. Forest at night, so insects may sit
+    inside the rain.
+  duration_s: 1202
+  bytes: 48066624
+  sha256: 7a88fae5a78c186c5d5a2ae79d8e2bdc7c5ea5ec164d20186b3c19a5971b822b
+  source: https://archive.org/download/aporee_54335_62155
+  file_url: https://archive.org/download/aporee_54335_62155/PluiependantlanuitSerrinhaORTF2239242044560264BR2108310248kHz20min.mp3
+- path: materials/sfx/loops/barcelona-window-rain_pd.mp3
+  role: window rain
+  license: Public Domain Mark 1.0
+  artist: _blank
+  place: Cardener Street, Barcelona
+  note: Morning rain with binaural microphones in the window, 7 July 2014. About
+    sixteen minutes. The bed for Rain on the Glass. Two brief louder moments,
+    otherwise even.
+  duration_s: 969
+  bytes: 38780386
+  sha256: 986f52d695924210c254fd9f2a37b667fa5e507ad5a9c43bb38a5dbe463f3941
+  source: https://archive.org/download/aporee_23718_27569
+  file_url: https://archive.org/download/aporee_23718_27569/RAIN07072014BCN.mp3
+- path: materials/sfx/loops/fairbanks-summer-rain_pd.mp3
+  role: summer rain
+  license: Public Domain Mark 1.0
+  artist: Sean Dowgray
+  place: Badger Street, Fairbanks, Alaska
+  note: Moderate late-summer rain. The archive file runs forty-five minutes and
+    gets heavier near the end. This copy keeps the even first thirty-two minutes.
+  duration_s: 1920
+  bytes: 61441272
+  sha256: 44857a7d9e6c3b4ebcf7637c85c479c62ae346e1f949980aa72ea86e545a014b
+  source: https://archive.org/download/aporee_64291_74178
+  file_url: https://archive.org/download/aporee_64291_74178/raininsummeer.mp3

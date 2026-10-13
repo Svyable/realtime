@@ -1,0 +1,41 @@
+# Rain on the glass for an hour under music. One long take. Offline.
+# Barcelona, 7 July 2014. Swap in the Serrinha or Fairbanks file for outdoor rain.
+title: "Rain on the Glass"
+duration_min: 60
+seed: 31
+keyframe: keyframe.jpg
+
+music:
+  mood: late_night
+  titles:
+    - "Rain on the Glass"
+    - "The Record and the Weather"
+    - "After the Street Goes Quiet"
+
+piano:
+  distance: open_doorway
+  pan: -0.06
+
+ambience:
+  layers:
+    - name: rain on the window
+      file: materials/sfx/loops/barcelona-window-rain_pd.mp3
+      lpf: 6500
+      smooth: 0.35
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 10
+
+visual:
+  motion: {type: gentle, amplitude: 0.2}
+  effects:
+    - type: rain_glass
+      region: {rect: [0.08, 0.08, 0.62, 0.78]}
+      drops_per_mpx: 900
+    - type: flicker
+      kind: lamp
+      center: [0.78, 0.4]
+      radius: 0.09
+
+thumbnail: {text: "Rain on the Glass", position: top-right}

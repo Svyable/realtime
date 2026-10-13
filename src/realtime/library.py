@@ -114,6 +114,17 @@ def report(root=None):
             lines.append('  materials/sfx/wildlife')
             lines.append(f'  {wsummary}')
             lines.append('  Northeastern spring chorus (New York, Pennsylvania, Ohio, Michigan, Ontario), common loons from Ontario, the Boundary Waters, Yellowstone, and the U.S. Fish and Wildlife Service, and a Utah field cricket. Peepers and crickets are different months.')
+        loop_path = repo / 'materials' / 'sfx' / 'loops' / 'manifest.yaml'
+        if loop_path.is_file():
+            loops = yaml.safe_load(loop_path.read_text()) or {}
+            lfiles = loops.get('files') or []
+            longest = max((item.get('duration_s') or 0) for item in lfiles) if lfiles else 0
+            lines.append('')
+            lines.append(f'loops    {len(lfiles)} long public-domain rains, longest {longest // 60} min')
+            lines.append('  materials/sfx/loops')
+            for item in lfiles:
+                mins = (item.get('duration_s') or 0) / 60
+                lines.append(f'  {mins:4.0f} min  {item["role"]:14} {item["path"]}')
     else:
         lines.append('beds    catalog not found. Clone the realtime repo and pass --root.')
     lines.append('')

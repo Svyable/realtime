@@ -18,6 +18,10 @@ realtime build scenes/yule-love/scene.yaml --root . --test
 
 Parish bells are in `sfx/pdsounds/interior/`. Carriage wheels for the night-train kit are still fetched with `realtime setup --sfx`. The same command also fetches a steam whistle. The train-ride recording is already in `sfx/pdsounds/transit/`.
 
+## Rain on the Glass
+
+`realtime kit window-rain` is a dark room and a long rain. The bed is `sfx/loops/barcelona-window-rain_pd.mp3`, sixteen minutes recorded in a window, 10 LU under the piano. The same folder holds a twenty-minute midnight rain from Serrinha do Alambari and thirty-two even minutes of late-summer rain in Fairbanks. Credits are in [sfx/loops/CREDITS.md](sfx/loops/CREDITS.md) (checked 2026-10-13).
+
 ## The Marsh at Night
 
 `realtime kit peepers` is an April window. The bed is `sfx/wildlife/night/ontario-peepers-treefrogs-loons_pd.mp3`, twenty minutes of peepers, tree frogs, and loons from Commanda Creek, Ontario, 7 LU under the piano. About six times an hour a loon crosses from Bray Lake. `realtime kit loons` makes that lake the bed: twelve minutes from 29 April 2026, with a Yellowstone tremolo four times an hour. Shorter peeper, frog, and loon takes are in the same shelf, with credits in [sfx/wildlife/CREDITS.md](sfx/wildlife/CREDITS.md) (checked 2026-10-12). None of them were recorded in New Hampshire.

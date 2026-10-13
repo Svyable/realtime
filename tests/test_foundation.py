@@ -152,7 +152,7 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
         fid = rel.split('/', 1)[1]
         assert by_id[fid]['sha256'] == digest
         assert by_id[fid]['url'] == url
-    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train', 'peepers', 'loons'):
+    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train', 'peepers', 'loons', 'window-rain'):
         parent = tmp_path / name
         parent.mkdir()
         with pytest.raises(SystemExit) as exc:
@@ -190,6 +190,14 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
     assert loon_bed.endswith('bray-lake-ontario-apr29_pd.mp3')
     assert (root / loon_bed).is_file()
     assert loons['ambience']['accents'][0]['file'].endswith('yellowstone-common-loon_pd.mp3')
+    rain = load(tmp_path / 'window-rain' / 'window-rain' / 'scene.yaml')
+    assert rain['title'] == 'Rain on the Glass'
+    assert rain['mix']['bed_lu_below_piano'] == 10
+    assert len(rain['ambience']['layers']) == 1
+    rain_bed = rain['ambience']['layers'][0]['file']
+    assert rain_bed.endswith('barcelona-window-rain_pd.mp3')
+    assert (root / rain_bed).is_file()
+    assert any(effect.get('type') == 'rain_glass' for effect in rain['visual']['effects'])
     with pytest.raises(SystemExit) as exc:
         main(['materials', '--root', str(root)])
     assert exc.value.code == 0
@@ -197,6 +205,7 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
     assert 'yule-love' in out and 'greensleeves' in out and 'fireplace' in out and 'offline' in out
     assert 'reservoir' in out and 'pdsounds' in out
     assert 'wildlife' in out and 'peepers' in out
+    assert 'loops' in out and 'window-rain' in out
 
 
 def test_pdsounds_reservoir_matches_its_manifest():
@@ -240,3 +249,22 @@ def test_wildlife_shelf_matches_its_manifest():
     shelf = catalog['wildlife'][0]
     assert shelf['manifest'] == 'materials/sfx/wildlife/manifest.yaml'
     assert any(row['id'] == 'peepers' and row['offline'] for row in catalog['kits'])
+
+
+def test_long_rain_loops_match_their_manifest():
+    import hashlib
+    import yaml
+    root = Path(__file__).resolve().parents[1]
+    manifest = yaml.safe_load((root / 'materials' / 'sfx' / 'loops' / 'manifest.yaml').read_text())
+    files = manifest['files']
+    assert len(files) == 3
+    for row in files:
+        assert row['license'] == 'Public Domain Mark 1.0'
+        assert row['duration_s'] >= 900
+        path = root / row['path']
+        assert path.is_file(), row['path']
+        assert path.stat().st_size == row['bytes'], row['path']
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        assert digest == row['sha256'], row['path']
+    catalog = yaml.safe_load((root / 'materials' / 'catalog.yaml').read_text())
+    assert catalog['loops'][0]['manifest'] == 'materials/sfx/loops/manifest.yaml'
