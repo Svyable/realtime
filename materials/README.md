@@ -17,3 +17,9 @@ realtime build scenes/yule-love/scene.yaml --root . --test
 `--root` is this clone, because the scene points at `materials/sfx/nature/…`.
 
 Parish bells are in `sfx/pdsounds/interior/`. Carriage wheels for the night-train kit are still fetched with `realtime setup --sfx`. The same command also fetches a steam whistle. The train-ride recording is already in `sfx/pdsounds/transit/`.
+
+## The Marsh at Night
+
+`realtime kit peepers` is an April window. The bed is `sfx/wildlife/night/ontario-peepers-treefrogs-loons_pd.mp3`, twenty minutes of peepers, tree frogs, and loons from Commanda Creek, Ontario, 7 LU under the piano. Shorter peeper, wood-frog, and leopard-frog takes from New York, Pennsylvania, Ohio, and Michigan are in the same shelf, with credits in [sfx/wildlife/CREDITS.md](sfx/wildlife/CREDITS.md) (checked 2026-10-12). None of them were recorded in New Hampshire.
+
+Summer insects are a different kit. `summer-porch` uses the Laguna Chacahua night (crickets and far surf). The Poznan field chorus is the drier alternative in `sfx/nature/crickets-night/`. The Salt Lake field cricket in `sfx/wildlife/insects/` is one close chirp. Do not lay any of those under the peepers.

@@ -36,6 +36,11 @@ kits:
     picture: Mid-century dining car from the corridor, one lamp, no logos or faces.
     music: late-night originals.
     sound: Carriage wheels after `realtime setup --sfx`, low-passed hard, 11 LU under a closed door. The picture uses train motion.
+  - id: peepers
+    offline: true
+    picture: Dark bedroom in April, one lamp, a black wetland beyond the window. No snow, no people, no text.
+    music: late-night originals. After the Ice, The Marsh Below, Three Thirty.
+    sound: One layer, the twenty-minute Ontario night (peepers, tree frogs, loons), 7 LU under the piano so the chorus is what you fall asleep to. The piano still leads. No cricket layer. The recording is Ontario, the same season as a New Hampshire April.
 
 beds:
   - path: materials/sfx/nature/fire/fireplace_crackling-wood-fire_pd.mp3
@@ -97,11 +102,11 @@ beds:
   - path: materials/sfx/nature/crickets-night/crickets_night-chorus-distant-surf_pd.mp3
     license: Public Domain Mark 1.0
     role: summer night
-    note: Dense crickets and far surf. Often enough on its own.
+    note: Dense night insects and far Pacific surf, Laguna Chacahua, Mexico. A summer bed. Often enough on its own.
   - path: materials/sfx/nature/crickets-night/crickets_panned-field-chorus_pd.mp3
     license: Public Domain Mark 1.0
     role: dusk field
-    note: Lighter, drier, panned. Porch at dusk. Short loop.
+    note: Lighter, drier, panned field chorus, Poznan, Poland. Short loop. A summer bed, not a peeper night.
   - path: materials/sfx/nature/birds/birds_forest-evening-song_cc0.mp3
     license: CC0 1.0
     role: evening birds
@@ -165,8 +170,16 @@ reservoir:
     upstream: https://commons.wikimedia.org/wiki/Category:PDsounds.org
     note: Environmental draw-pile from PDSounds.org, mirrored on Wikimedia Commons. Commons lists 592 public-domain ogg files. This folder is the weather, water, nature, town, transit, and interior slice. Speech, music, and close-miked foley were not copied. Audition a file before it sits under the piano.
 
+wildlife:
+  - id: northeastern-night
+    path: materials/sfx/wildlife
+    manifest: materials/sfx/wildlife/manifest.yaml
+    credits: materials/sfx/wildlife/CREDITS.md
+    checked: "2026-10-12"
+    note: Spring peepers, wood frogs, leopard frogs, a twenty-minute Ontario night with tree frogs and loons, a Salt Lake field cricket, and a Yellowstone common loon. Public Domain Mark, plus one U.S. government loon. None of the peeper files were recorded in New Hampshire. Peepers (April) and crickets (summer) do not sing in the same month. Katydids, American toads, whip-poor-wills, and barred owls stayed out because the clean files found were CC-BY or CC-BY-SA.
+
 mixing:
-  - Two bed layers is the usual ceiling. The piano leads. Default bed is 10 LU under the piano; the kits use 11 or 12.
+  - Two bed layers is the usual ceiling. The piano leads. Default bed is 10 LU under the piano. Most kits use 11 or 12. The peeper kit uses 7 so the chorus is close enough to sleep to, and the piano still leads.
   - Weather can be brighter than the piano. A closed door is about 1.1 kHz on the piano. Rain and fire stay higher than that, or the room sounds muffled.
   - Thunder and whistles are accents. per_hour, a short clip, extra_lu_below so they never sit on the melody.
 
@@ -175,4 +188,5 @@ do_not_add:
   - CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-ND, or any ShareAlike, NonCommercial, or NoDerivatives recording
   - Freesound CDN originals. A Wikimedia Commons mirror of a CC0 upload is fine, and it needs a checked sha256
   - A modern copyrighted arrangement of a public-domain tune
+  - A western chorus frog, a boreal chorus frog, or a Yellowstone species labeled as a New Hampshire spring peeper
   - Video masters, wav renders, or any file that needs Git LFS. Renders stay in ./media

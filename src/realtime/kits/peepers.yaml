@@ -1,0 +1,38 @@
+# April night. One spring chorus, close enough to sleep to. Offline.
+# The bed is Ontario. Do not add a cricket layer. Those are different months.
+title: "The Marsh at Night"
+duration_min: 60
+seed: 19
+keyframe: keyframe.jpg
+
+music:
+  mood: late_night
+  titles:
+    - "After the Ice"
+    - "The Marsh Below"
+    - "Three Thirty"
+
+piano:
+  distance: open_doorway
+  pan: -0.05
+
+ambience:
+  layers:
+    - name: peepers, tree frogs, and loons
+      file: materials/sfx/wildlife/night/ontario-peepers-treefrogs-loons_pd.mp3
+      lpf: 7000
+      smooth: 0.25
+      gain_db: 0
+
+mix:
+  bed_lu_below_piano: 7
+
+visual:
+  motion: {type: gentle, amplitude: 0.25}
+  effects:
+    - type: flicker
+      kind: lamp
+      center: [0.72, 0.4]
+      radius: 0.08
+
+thumbnail: {text: "The Marsh at Night", position: top-right}

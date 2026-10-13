@@ -1,0 +1,115 @@
+source: Public-domain night wildlife, mostly the northeastern spring chorus
+checked: '2026-10-12'
+note: Spring peepers are the New Hampshire April night. These choruses were recorded
+  in New York, Pennsylvania, Ohio, Michigan, and Ontario by the people who released
+  them under the Public Domain Mark, plus one U.S. National Park Service loon. The
+  two cricket beds already in materials/sfx/nature are Mexico and Poland. The field
+  cricket here is Utah. Peepers and crickets do not sing in the same month.
+files:
+- path: materials/sfx/wildlife/peepers/finger-lakes-marsh_pd.flac
+  role: peepers
+  license: Public Domain Mark 1.0
+  artist: joshua.bonnetta
+  place: Roy H. Park Preserve, Finger Lakes, New York
+  note: Spring peepers at the edge of a marsh beside a small stream. About two minutes.
+    A little running water, light air traffic, distant cars.
+  bytes: 22131061
+  sha256: 6edfcf03df894d46daaedf336e2beea102e18fedf4ca4f1f036e98b35c900a7a
+  source: https://archive.org/download/aporee_52866_60399
+  file_url: https://archive.org/download/aporee_52866_60399/peepersRoyHPark.flac
+- path: materials/sfx/wildlife/peepers/finger-lakes-wetland_pd.flac
+  role: peepers
+  license: Public Domain Mark 1.0
+  artist: joshua.bonnetta
+  place: Roy H. Park Preserve, Finger Lakes, New York
+  note: Spring peepers in a wetland marsh. About a minute and a half. Stereo pair.
+  bytes: 15339175
+  sha256: 37c062f76d7b3c69ac49542552c1884b0594f27a36bd9e918cdb1d341dbdc266
+  source: https://archive.org/download/aporee_52875_60409
+  file_url: https://archive.org/download/aporee_52875_60409/peepers108db.flac
+- path: materials/sfx/wildlife/peepers/bear-lake-michigan-38f_pd.ogg
+  role: peepers
+  license: Public Domain Mark 1.0
+  artist: Vince Hancock
+  place: Bear Lake, Michigan
+  note: Spring peepers just after midnight at 38 degrees, a quieter cold chorus. About
+    four minutes.
+  bytes: 3036730
+  sha256: 6a363e231ee7f21b3def2c3f7bd3d338dfe7a43e3ad44a327cf8403f1d65a9cf
+  source: https://archive.org/download/aporee_32068_36832
+  file_url: https://archive.org/download/aporee_32068_36832/apr2420161204amBLEspringpeepers38d.ogg
+- path: materials/sfx/wildlife/peepers/pittston-pa_pd.flac
+  role: peepers
+  license: Public Domain Mark 1.0
+  artist: John Joseph Dziak
+  place: James Clark Park, North Pittston, Pennsylvania
+  note: A close spring-peeper chorus, 21 April 2019. About forty seconds.
+  bytes: 1898335
+  sha256: d8ed5505ef8c8839d251d5e57c123108228d33a0414220c0c8a044dcfdf7f669
+  source: https://archive.org/download/SpringPeeperFrogsApril21of2019inNorthPittstonPAonlineAudioConverter.com
+  file_url: https://archive.org/download/SpringPeeperFrogsApril21of2019inNorthPittstonPAonlineAudioConverter.com/SpringPeeperFrogsApril21of2019inNorthPittstonPA.flac
+- path: materials/sfx/wildlife/frogs/ohio-peepers-wood-frogs_pd.mp3
+  role: frogs
+  license: Public Domain Mark 1.0
+  artist: fluxmonk
+  place: Towpath south of Red Lock, Brecksville, Ohio
+  note: Chorus frogs, spring peepers, and an occasional wood frog on a rainy evening.
+    About five minutes.
+  bytes: 7456906
+  sha256: ed5fa1dd44928810743798974a76a95d1726d3439308a1d2f3393f40a4c171d6
+  source: https://archive.org/download/aporee_55979_63984
+  file_url: https://archive.org/download/aporee_55979_63984/westernChorusFrogredLock03192022aporee.mp3
+- path: materials/sfx/wildlife/frogs/ohio-leopard-frogs-peepers_pd.mp3
+  role: frogs
+  license: Public Domain Mark 1.0
+  artist: fluxmonk
+  place: Towpath, Brecksville, Ohio
+  note: Northern leopard frogs snoring under spring peepers. About two and a half
+    minutes.
+  bytes: 3504082
+  sha256: 7da0f37fd36710c87a2f1c4cf62459545181f03ca263894ad28d8c8a0315ea31
+  source: https://archive.org/download/aporee_55987_64000
+  file_url: https://archive.org/download/aporee_55987_64000/northernLeopardFrogredLock03212022aporee.mp3
+- path: materials/sfx/wildlife/night/ontario-peepers-treefrogs-loons_pd.mp3
+  role: night
+  license: Public Domain Mark 1.0
+  artist: darren
+  place: Warbler's Roost, Commanda Creek and Deer Lake, Ontario
+  note: 3:30 am. Spring peepers, tree frogs, and loons, recorded from a balcony about
+    500 feet from the creek. About twenty minutes. The long bed to fall asleep to.
+  bytes: 47396615
+  sha256: 9454bb499e1858fbfaae4180e0d829a1b0b7cb74220f59cff36f850ba0dfea01
+  source: https://archive.org/download/aporee_32726_57050
+  file_url: https://archive.org/download/aporee_32726_57050/ReveilMay2330.mp3
+- path: materials/sfx/wildlife/insects/field-cricket-salt-lake-1_pd.ogg
+  role: insects
+  license: Public Domain Mark 1.0
+  artist: Jacob Keenum
+  place: Salt Lake City, Utah
+  note: One field cricket, close and rhythmic. The recordist notes it was mic'd low.
+    Not a New England chorus, and not a summer-with-peepers layer.
+  bytes: 313975
+  sha256: 8c3fdd3862675f79a19859b1b4109dff34dc06724b81bb452769beccaeb39f0b
+  source: https://archive.org/download/NighttimeBug2
+  file_url: https://archive.org/download/NighttimeBug2/nighttime%20bug%201.ogg
+- path: materials/sfx/wildlife/insects/field-cricket-salt-lake-2_pd.ogg
+  role: insects
+  license: Public Domain Mark 1.0
+  artist: Jacob Keenum
+  place: Salt Lake City, Utah
+  note: A second take of the same field cricket.
+  bytes: 601651
+  sha256: 954a85e74863bb1d0c132fe2e423a6a33ae035ef8f1f7743375424d6226a8972
+  source: https://archive.org/download/NighttimeBug2
+  file_url: https://archive.org/download/NighttimeBug2/nighttime%20bug%202.ogg
+- path: materials/sfx/wildlife/loons/yellowstone-common-loon_pd.mp3
+  role: loons
+  license: Public domain (U.S. government work)
+  artist: NPS and MSU Acoustic Atlas / Jennifer Jerrett
+  place: Yellowstone National Park
+  note: Common loon, the same species that calls on New Hampshire lakes. A short call,
+    not a bed. Credit the National Park Service.
+  bytes: 3137178
+  sha256: 9c6c81c70cdacd416f502e68db0d03c33330611417bc3b9f555d780c0efa1a94
+  source: https://archive.org/download/nps-yell-sounds-commonloon
+  file_url: https://archive.org/download/nps-yell-sounds-commonloon/01-Common-Loon.mp3

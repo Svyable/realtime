@@ -152,7 +152,7 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
         fid = rel.split('/', 1)[1]
         assert by_id[fid]['sha256'] == digest
         assert by_id[fid]['url'] == url
-    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train'):
+    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train', 'peepers'):
         parent = tmp_path / name
         parent.mkdir()
         with pytest.raises(SystemExit) as exc:
@@ -167,12 +167,22 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
     assert yule['piano']['distance'] == 'open_doorway'
     assert yule['mix']['bed_lu_below_piano'] == 11
     assert yule['music']['carols'] == ['greensleeves', 'the-water-is-wide', 'silent-night', 'auld-lang-syne']
+    peepers = load(tmp_path / 'peepers' / 'peepers' / 'scene.yaml')
+    assert peepers['title'] == 'The Marsh at Night'
+    assert peepers['music']['mood'] == 'late_night'
+    assert peepers['music']['carols'] == []
+    assert peepers['mix']['bed_lu_below_piano'] == 7
+    assert len(peepers['ambience']['layers']) == 1
+    bed = peepers['ambience']['layers'][0]['file']
+    assert bed.endswith('ontario-peepers-treefrogs-loons_pd.mp3')
+    assert (root / bed).is_file()
     with pytest.raises(SystemExit) as exc:
         main(['materials', '--root', str(root)])
     assert exc.value.code == 0
     out = capsys.readouterr().out
     assert 'yule-love' in out and 'greensleeves' in out and 'fireplace' in out and 'offline' in out
     assert 'reservoir' in out and 'pdsounds' in out
+    assert 'wildlife' in out and 'peepers' in out
 
 
 def test_pdsounds_reservoir_matches_its_manifest():
@@ -189,3 +199,29 @@ def test_pdsounds_reservoir_matches_its_manifest():
         assert path.is_file(), row['path']
         digest = hashlib.sha256(path.read_bytes()).hexdigest()
         assert digest == row['sha256'], row['path']
+
+
+def test_wildlife_shelf_matches_its_manifest():
+    import hashlib
+    import yaml
+    root = Path(__file__).resolve().parents[1]
+    manifest = yaml.safe_load((root / 'materials' / 'sfx' / 'wildlife' / 'manifest.yaml').read_text())
+    files = manifest['files']
+    assert len(files) == 10
+    allowed = {'Public Domain Mark 1.0', 'Public domain (U.S. government work)'}
+    roles = set()
+    for row in files:
+        assert row['license'] in allowed, row['path']
+        lowered = row['license'].lower()
+        assert 'by-sa' not in lowered and 'noncommercial' not in lowered
+        path = root / row['path']
+        assert path.is_file(), row['path']
+        assert path.stat().st_size == row['bytes'], row['path']
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        assert digest == row['sha256'], row['path']
+        roles.add(row['role'])
+    assert roles == {'peepers', 'frogs', 'night', 'insects', 'loons'}
+    catalog = yaml.safe_load((root / 'materials' / 'catalog.yaml').read_text())
+    shelf = catalog['wildlife'][0]
+    assert shelf['manifest'] == 'materials/sfx/wildlife/manifest.yaml'
+    assert any(row['id'] == 'peepers' and row['offline'] for row in catalog['kits'])
