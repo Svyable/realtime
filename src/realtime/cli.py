@@ -198,7 +198,7 @@ def main(argv=None):
     m.add_argument('--root', help='clone that holds materials/ (default: the current directory, then this repo)')
     m.set_defaults(func=_materials)
 
-    k = sub.add_parser('kit', help='write a ready scene (yule-love, peepers, summer-porch, hearth-rain, …)')
+    k = sub.add_parser('kit', help='write a ready scene (yule-love, peepers, loons, summer-porch, …)')
     k.add_argument('name', choices=kit_names())
     k.add_argument('--dir', help='parent directory (default ./scenes)')
     k.set_defaults(func=_kit)

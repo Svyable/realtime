@@ -40,7 +40,12 @@ kits:
     offline: true
     picture: Dark bedroom in April, one lamp, a black wetland beyond the window. No snow, no people, no text.
     music: late-night originals. After the Ice, The Marsh Below, Three Thirty.
-    sound: One layer, the twenty-minute Ontario night (peepers, tree frogs, loons), 7 LU under the piano so the chorus is what you fall asleep to. The piano still leads. No cricket layer. The recording is Ontario, the same season as a New Hampshire April.
+    sound: One layer, the twenty-minute Ontario night (peepers, tree frogs, loons), 7 LU under the piano. About six times an hour, twenty seconds of loons from Bray Lake, Ontario. The piano still leads. No cricket layer. Both recordings are Ontario, the same season as a New Hampshire April.
+  - id: loons
+    offline: true
+    picture: Dark room, one lamp, a black lake beyond the window. No snow, no people, no text.
+    music: late-night originals. Across the Water, One Wail, The Far Shore.
+    sound: One layer, twelve minutes of loons on Bray Lake, Ontario, the evening of 29 April 2026, 7 LU under the piano. A Yellowstone common-loon tremolo four times an hour. No cricket layer. Ontario and Yellowstone, the same species as a New Hampshire lake.
 
 beds:
   - path: materials/sfx/nature/fire/fireplace_crackling-wood-fire_pd.mp3
@@ -176,7 +181,7 @@ wildlife:
     manifest: materials/sfx/wildlife/manifest.yaml
     credits: materials/sfx/wildlife/CREDITS.md
     checked: "2026-10-12"
-    note: Spring peepers, wood frogs, leopard frogs, a twenty-minute Ontario night with tree frogs and loons, a Salt Lake field cricket, and a Yellowstone common loon. Public Domain Mark, plus one U.S. government loon. None of the peeper files were recorded in New Hampshire. Peepers (April) and crickets (summer) do not sing in the same month. Katydids, American toads, whip-poor-wills, and barred owls stayed out because the clean files found were CC-BY or CC-BY-SA.
+    note: Spring peepers, wood frogs, leopard frogs, a twenty-minute Ontario night with tree frogs and loons, common loons from Bray Lake, the Boundary Waters, Yellowstone, and the U.S. Fish and Wildlife Service, and a Salt Lake field cricket. Public Domain Mark, plus U.S. government works and one PDSounds call. None of the peeper or loon files were recorded in New Hampshire. Peepers (April) and crickets (summer) do not sing in the same month. Katydids, American toads, whip-poor-wills, and barred owls stayed out because the clean files found were CC-BY or CC-BY-SA.
 
 mixing:
   - Two bed layers is the usual ceiling. The piano leads. Default bed is 10 LU under the piano. Most kits use 11 or 12. The peeper kit uses 7 so the chorus is close enough to sleep to, and the piano still leads.

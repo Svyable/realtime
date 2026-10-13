@@ -152,7 +152,7 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
         fid = rel.split('/', 1)[1]
         assert by_id[fid]['sha256'] == digest
         assert by_id[fid]['url'] == url
-    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train', 'peepers'):
+    for name in ('yule-love', 'hearth-rain', 'summer-porch', 'cove-window', 'parish-bells', 'night-train', 'peepers', 'loons'):
         parent = tmp_path / name
         parent.mkdir()
         with pytest.raises(SystemExit) as exc:
@@ -176,6 +176,20 @@ def test_kits_catalog_and_materials(tmp_path, capsys):
     bed = peepers['ambience']['layers'][0]['file']
     assert bed.endswith('ontario-peepers-treefrogs-loons_pd.mp3')
     assert (root / bed).is_file()
+    assert len(peepers['ambience']['accents']) == 1
+    accent = peepers['ambience']['accents'][0]
+    assert accent['file'].endswith('bray-lake-ontario-may10_pd.mp3')
+    assert accent['per_hour'] == 6
+    assert (root / accent['file']).is_file()
+    loons = load(tmp_path / 'loons' / 'loons' / 'scene.yaml')
+    assert loons['title'] == 'Across the Water'
+    assert loons['music']['carols'] == []
+    assert loons['mix']['bed_lu_below_piano'] == 7
+    assert len(loons['ambience']['layers']) == 1
+    loon_bed = loons['ambience']['layers'][0]['file']
+    assert loon_bed.endswith('bray-lake-ontario-apr29_pd.mp3')
+    assert (root / loon_bed).is_file()
+    assert loons['ambience']['accents'][0]['file'].endswith('yellowstone-common-loon_pd.mp3')
     with pytest.raises(SystemExit) as exc:
         main(['materials', '--root', str(root)])
     assert exc.value.code == 0
@@ -207,8 +221,8 @@ def test_wildlife_shelf_matches_its_manifest():
     root = Path(__file__).resolve().parents[1]
     manifest = yaml.safe_load((root / 'materials' / 'sfx' / 'wildlife' / 'manifest.yaml').read_text())
     files = manifest['files']
-    assert len(files) == 10
-    allowed = {'Public Domain Mark 1.0', 'Public domain (U.S. government work)'}
+    assert len(files) == 15
+    allowed = {'Public Domain Mark 1.0', 'Public domain (U.S. government work)', 'Public domain'}
     roles = set()
     for row in files:
         assert row['license'] in allowed, row['path']
@@ -221,6 +235,7 @@ def test_wildlife_shelf_matches_its_manifest():
         assert digest == row['sha256'], row['path']
         roles.add(row['role'])
     assert roles == {'peepers', 'frogs', 'night', 'insects', 'loons'}
+    assert sum(1 for row in files if row['role'] == 'loons') == 6
     catalog = yaml.safe_load((root / 'materials' / 'catalog.yaml').read_text())
     shelf = catalog['wildlife'][0]
     assert shelf['manifest'] == 'materials/sfx/wildlife/manifest.yaml'

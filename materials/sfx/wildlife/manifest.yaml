@@ -2,9 +2,12 @@ source: Public-domain night wildlife, mostly the northeastern spring chorus
 checked: '2026-10-12'
 note: Spring peepers are the New Hampshire April night. These choruses were recorded
   in New York, Pennsylvania, Ohio, Michigan, and Ontario by the people who released
-  them under the Public Domain Mark, plus one U.S. National Park Service loon. The
-  two cricket beds already in materials/sfx/nature are Mexico and Poland. The field
-  cricket here is Utah. Peepers and crickets do not sing in the same month.
+  them under the Public Domain Mark. Common loons are the same species that calls
+  on New Hampshire lakes, recorded at Bray Lake and Commanda Creek in Ontario, Lake
+  Insula in the Boundary Waters, Yellowstone, and by the U.S. Fish and Wildlife
+  Service. The two cricket beds already in materials/sfx/nature are Mexico and
+  Poland. The field cricket here is Utah. Peepers and crickets do not sing in the
+  same month.
 files:
 - path: materials/sfx/wildlife/peepers/finger-lakes-marsh_pd.flac
   role: peepers
@@ -113,3 +116,57 @@ files:
   sha256: 9c6c81c70cdacd416f502e68db0d03c33330611417bc3b9f555d780c0efa1a94
   source: https://archive.org/download/nps-yell-sounds-commonloon
   file_url: https://archive.org/download/nps-yell-sounds-commonloon/01-Common-Loon.mp3
+- path: materials/sfx/wildlife/loons/bray-lake-ontario-apr29_pd.mp3
+  role: loons
+  license: Public Domain Mark 1.0
+  artist: Floyd Simpkins / NAISA
+  place: Bray Lake, Machar Township, Ontario
+  note: Common loons on the lake, 29 April 2026, 8:18 pm. An unsupervised recorder
+    hung in a bird feeder. About twelve minutes. The long loon bed.
+  bytes: 28473512
+  sha256: f9c3137a4309ec06489c3649342e0e4d97882d137837800393ce9ac840729c6a
+  source: https://archive.org/download/aporee_72653_84824
+  file_url: https://archive.org/download/aporee_72653_84824/922BrayLakeRdMachar202604292018binaural.mp3
+- path: materials/sfx/wildlife/loons/bray-lake-ontario-may10_pd.mp3
+  role: loons
+  license: Public Domain Mark 1.0
+  artist: Floyd Simpkins / NAISA
+  place: Bray Lake, Machar Township, Ontario
+  note: A second evening on the same lake, 10 May 2026, 8:43 pm. About seven minutes.
+    Used as the occasional loon over the peeper bed.
+  bytes: 17296704
+  sha256: bd74e96bb57ee4a2dc2d4feafb346970686b1d5a408d7b381fe3eea91c34ef58
+  source: https://archive.org/download/aporee_72653_84825
+  file_url: https://archive.org/download/aporee_72653_84825/922BrayLakeRdMachar202605102043binaural.mp3
+- path: materials/sfx/wildlife/loons/lake-insula-boundary-waters_pd.mp3
+  role: loons
+  license: Public Domain Mark 1.0
+  artist: goodmanjm
+  place: Lake Insula, Boundary Waters, Minnesota
+  note: Loons, frogs, and wind before dawn, 9 July 2015, from a campsite on an island.
+    About a minute.
+  bytes: 1597736
+  sha256: bef05efe540d7d2fb073e62732c2c0d2576bd662761f36a20e5806e943d8cf91
+  source: https://archive.org/download/aporee_29901_34384
+  file_url: https://archive.org/download/aporee_29901_34384/frogsloonswind.mp3
+- path: materials/sfx/wildlife/loons/fws-loons-calling_pd.ogg
+  role: loons
+  license: Public domain (U.S. government work)
+  artist: U.S. Fish and Wildlife Service
+  place: United States (place not stated)
+  note: Common loon (Gavia immer), about twenty-four seconds. A U.S. Fish and
+    Wildlife Service recording. Credit the Service.
+  bytes: 269321
+  sha256: 28e0bbcf0f0e2c49f7d694d76d289a61fd2e272dd80226557de056516a914614
+  source: https://commons.wikimedia.org/wiki/File:Loons.ogg
+  file_url: https://upload.wikimedia.org/wikipedia/commons/1/13/Loons.ogg
+- path: materials/sfx/wildlife/loons/pdsounds-loon-call_pd.ogg
+  role: loons
+  license: Public domain
+  artist: stephan
+  place: place not stated
+  note: One loon call, about five seconds. Night tag on PDSounds. Place was not recorded.
+  bytes: 102565
+  sha256: ddf149ef62ddfdbd3359537a2428960b0ac2b85503f0c39b6c99895efff904cf
+  source: https://commons.wikimedia.org/wiki/File:Loon_call.ogg
+  file_url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Loon_call.ogg

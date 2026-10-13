@@ -23,6 +23,15 @@ ambience:
       lpf: 7000
       smooth: 0.25
       gain_db: 0
+  accents:
+    - name: loons across the lake
+      file: materials/sfx/wildlife/loons/bray-lake-ontario-may10_pd.mp3
+      lpf: 5500
+      hpf: 180
+      smooth: 0.35
+      per_hour: 6
+      clip_s: 22
+      extra_lu_below: -3
 
 mix:
   bed_lu_below_piano: 7

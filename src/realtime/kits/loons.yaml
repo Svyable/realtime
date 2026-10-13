@@ -1,0 +1,48 @@
+# A north-woods lake after dark. The loons are the bed. Offline.
+# Bray Lake, Ontario, 29 April 2026. Not a New Hampshire tape. No cricket layer.
+title: "Across the Water"
+duration_min: 60
+seed: 23
+keyframe: keyframe.jpg
+
+music:
+  mood: late_night
+  titles:
+    - "Across the Water"
+    - "One Wail"
+    - "The Far Shore"
+
+piano:
+  distance: open_doorway
+  pan: -0.08
+
+ambience:
+  layers:
+    - name: loons on the lake
+      file: materials/sfx/wildlife/loons/bray-lake-ontario-apr29_pd.mp3
+      lpf: 6000
+      hpf: 120
+      smooth: 0.4
+      gain_db: 0
+  accents:
+    - name: closer tremolo
+      file: materials/sfx/wildlife/loons/yellowstone-common-loon_pd.mp3
+      lpf: 4500
+      hpf: 220
+      smooth: 0.3
+      per_hour: 4
+      clip_s: 14
+      extra_lu_below: -2
+
+mix:
+  bed_lu_below_piano: 7
+
+visual:
+  motion: {type: gentle, amplitude: 0.22}
+  effects:
+    - type: flicker
+      kind: lamp
+      center: [0.28, 0.42]
+      radius: 0.09
+
+thumbnail: {text: "Across the Water", position: top-right}

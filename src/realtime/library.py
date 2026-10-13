@@ -113,7 +113,7 @@ def report(root=None):
             lines.append(f'wildlife  {len(wfiles)} public-domain night recordings, {wmb:.0f} MB')
             lines.append('  materials/sfx/wildlife')
             lines.append(f'  {wsummary}')
-            lines.append('  Northeastern spring chorus (New York, Pennsylvania, Ohio, Michigan, Ontario), a Utah field cricket, and a Yellowstone common loon. Peepers and crickets are different months.')
+            lines.append('  Northeastern spring chorus (New York, Pennsylvania, Ohio, Michigan, Ontario), common loons from Ontario, the Boundary Waters, Yellowstone, and the U.S. Fish and Wildlife Service, and a Utah field cricket. Peepers and crickets are different months.')
     else:
         lines.append('beds    catalog not found. Clone the realtime repo and pass --root.')
     lines.append('')
